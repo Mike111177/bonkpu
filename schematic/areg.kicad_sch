@@ -1,0 +1,92 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "3c0aa024-4a21-4c9d-a92c-374638a8f52f")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 130.81 111.76)
+		(size 63.5 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "312bd808-b3b4-47bc-ab11-1cf5b579279a")
+		(property "Sheetname" "REG"
+			(at 130.81 111.0484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 130.81 128.8546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "comp1"
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/2966b6a9-c6d2-47af-bd8d-04acb83100a9"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 123.19 43.18)
+		(size 31.75 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cccd19ca-458b-4411-96f0-62c41db1f66a")
+		(property "Sheetname" "Bus Gate"
+			(at 123.19 42.4684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "bus_gate.kicad_sch"
+			(at 123.19 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "comp1"
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/2966b6a9-c6d2-47af-bd8d-04acb83100a9"
+					(page "11")
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,201 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "a503c758-2675-40d5-884b-d418379bb72d")
+	(paper "A4")
+	(lib_symbols)
+	(bus_entry
+		(at 100.33 76.2)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e44ec08-0d41-429d-883c-61e7e56c08ff")
+	)
+	(bus_entry
+		(at 100.33 93.98)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e30dcf7f-41c7-428f-b073-1e56cc76d787")
+	)
+	(bus
+		(pts
+			(xy 102.87 78.74) (xy 118.11 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "520a8a77-7abf-4cbd-8e9c-25dd104000d7")
+	)
+	(bus
+		(pts
+			(xy 102.87 96.52) (xy 116.84 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfd3c5de-a871-4127-91d5-76790e4548c2")
+	)
+	(bus
+		(pts
+			(xy 100.33 76.2) (xy 100.33 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9e54c2b-c344-4ab5-96d2-e1ae6f7990bb")
+	)
+	(bus
+		(pts
+			(xy 100.33 71.12) (xy 100.33 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbccf4c6-f2af-4ec0-ae2a-b4d130b32252")
+	)
+	(label "vh[0..7]"
+		(at 102.87 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "274558da-cb90-4a84-8026-67fb43850568")
+	)
+	(label "vl[0..7]"
+		(at 104.14 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4a164f3-b16e-47d2-b25a-e244cae38fb2")
+	)
+	(hierarchical_label "{vh[0..7], vl[0..7]}"
+		(shape input)
+		(at 100.33 71.12 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8f8f8e74-2c26-447e-980f-aae02a91f0c4")
+	)
+	(sheet
+		(at 116.84 93.98)
+		(size 12.7 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "48f29954-f0c1-43b5-804f-dbed5555efac")
+		(property "Sheetname" "Indicator Low"
+			(at 116.84 93.2684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_indicator.kicad_sch"
+			(at 116.84 99.6446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "v[0..7]" input
+			(at 116.84 96.52 180)
+			(uuid "f1377080-1bd3-4e7c-befe-521035289c25")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "comp1"
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/cabd2062-2f2d-4f13-8cc3-5e0ddca94628"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 118.11 76.2)
+		(size 12.7 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "722463f3-276f-4eff-9624-31577fdd2182")
+		(property "Sheetname" "Indicator High"
+			(at 118.11 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_indicator.kicad_sch"
+			(at 118.11 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "v[0..7]" input
+			(at 118.11 78.74 180)
+			(uuid "431c1a2d-3492-4f22-9d71-e53a5a1ec656")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "comp1"
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/cabd2062-2f2d-4f13-8cc3-5e0ddca94628"
+					(page "14")
+				)
+			)
+		)
+	)
+)

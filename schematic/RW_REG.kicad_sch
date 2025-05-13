@@ -1,0 +1,264 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "3c0aa024-4a21-4c9d-a92c-374638a8f52f")
+	(paper "A4")
+	(lib_symbols)
+	(bus
+		(pts
+			(xy 133.35 81.28) (xy 142.24 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e174433b-4a1d-4b6f-9ef8-2adf6bcbe8a0")
+	)
+	(bus
+		(pts
+			(xy 133.35 78.74) (xy 142.24 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3473073-e5d0-4f87-938a-48f3b3e3512b")
+	)
+	(hierarchical_label "bus[0..7]"
+		(shape bidirectional)
+		(at 139.7 78.74 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3d4a8ff7-5b51-489c-b68e-b293d5df8c4c")
+	)
+	(hierarchical_label "CLK"
+		(shape input)
+		(at 162.56 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7b7b392e-a76e-4dd6-9194-33cf3f37e8ef")
+	)
+	(hierarchical_label "v[0..7]"
+		(shape output)
+		(at 139.7 81.28 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ce0b800a-582b-4ce9-a4a9-dae4d2497e83")
+	)
+	(hierarchical_label "~{I}"
+		(shape input)
+		(at 162.56 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dca7419f-d135-487a-a8dc-60d064cc1f67")
+	)
+	(hierarchical_label "~{O}"
+		(shape input)
+		(at 133.35 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dd50d179-ff30-4863-a60e-62a21c6dcc50")
+	)
+	(hierarchical_label "CLR"
+		(shape input)
+		(at 162.56 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f3094def-8d45-4c23-a179-a9810119c159")
+	)
+	(sheet
+		(at 142.24 77.47)
+		(size 20.32 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "312bd808-b3b4-47bc-ab11-1cf5b579279a")
+		(property "Sheetname" "REG"
+			(at 142.24 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "REG.kicad_sch"
+			(at 142.24 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "bus[0..7]" input
+			(at 142.24 78.74 180)
+			(uuid "aba77382-f640-47cd-acc5-376c79a6b02e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "v[0..7]" output
+			(at 142.24 81.28 180)
+			(uuid "d40698aa-868b-4138-b76e-70016668bcac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{I}" input
+			(at 162.56 83.82 0)
+			(uuid "bea434d1-bd83-4104-aa9a-41b1e5253158")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CLK" input
+			(at 162.56 78.74 0)
+			(uuid "c95170e6-11fc-41b5-94dd-fe8bdeea52cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RESET" input
+			(at 162.56 81.28 0)
+			(uuid "b01f37c0-5f26-4532-bcbb-4646fd1d027f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "comp1"
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/2966b6a9-c6d2-47af-bd8d-04acb83100a9"
+					(page "9")
+				)
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/9315548b-fd2b-47c5-b1a6-9d741afafba4"
+					(page "17")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 107.95 77.47)
+		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cccd19ca-458b-4411-96f0-62c41db1f66a")
+		(property "Sheetname" "Bus Gate"
+			(at 107.95 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BUS_GATE.kicad_sch"
+			(at 107.95 85.6746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "~{O}" input
+			(at 133.35 83.82 0)
+			(uuid "ca108d8c-4098-49d6-9640-6c4aac0f8ce5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "v[0..7]" input
+			(at 133.35 81.28 0)
+			(uuid "38daa0b2-0d60-457c-a782-80b317a75ec3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "bus[0..7]" output
+			(at 133.35 78.74 0)
+			(uuid "a9459ac7-46ec-4f0a-b134-f07d3b3baf4c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "comp1"
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/2966b6a9-c6d2-47af-bd8d-04acb83100a9"
+					(page "11")
+				)
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/9315548b-fd2b-47c5-b1a6-9d741afafba4"
+					(page "16")
+				)
+			)
+		)
+	)
+)

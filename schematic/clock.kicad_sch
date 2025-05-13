@@ -1,0 +1,514 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "2f21574b-e636-4899-a795-dd0a13765a1f")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Timer:LM555xN"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -10.16 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LM555xN"
+				(at 2.54 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+				(at 16.51 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm555.pdf"
+				(at 21.59 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Timer, 555 compatible, PDIP-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "single timer 555"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LM555xN_0_0"
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LM555xN_0_1"
+				(rectangle
+					(start -8.89 -7.62)
+					(end 8.89 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.89 -7.62)
+					(end 8.89 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LM555xN_1_1"
+				(pin input line
+					(at -12.7 5.08 0)
+					(length 3.81)
+					(name "TR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 0 0)
+					(length 3.81)
+					(name "CV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input inverted
+					(at -12.7 -5.08 0)
+					(length 3.81)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 5.08 180)
+					(length 3.81)
+					(name "Q"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 0 180)
+					(length 3.81)
+					(name "DIS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -5.08 180)
+					(length 3.81)
+					(name "THR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "Timer:LM555xN")
+		(at 53.34 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1da8d773-f75d-4c7e-85ca-ad54b233b514")
+		(property "Reference" "U11"
+			(at 55.4833 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LM555xN"
+			(at 55.4833 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 69.85 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm555.pdf"
+			(at 74.93 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Timer, 555 compatible, PDIP-8"
+			(at 53.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38f5662d-c18d-4c22-813f-642510934dc9")
+		)
+		(pin "7"
+			(uuid "dd47918d-1ec8-4689-8a90-3b3f28e465b7")
+		)
+		(pin "6"
+			(uuid "d95ec6a5-5755-4fee-8407-8aa2f8e501b1")
+		)
+		(pin "5"
+			(uuid "5b36ded6-2608-44b8-beca-48b403d18255")
+		)
+		(pin "4"
+			(uuid "20a87d73-0401-4a02-81a7-4025902d20ce")
+		)
+		(pin "2"
+			(uuid "328d9932-d47f-410a-a5ba-2de7ff5b65a9")
+		)
+		(pin "3"
+			(uuid "e17b7300-14bc-46a5-a4ac-592896204656")
+		)
+		(pin "8"
+			(uuid "5baf51c7-6865-4c4f-9cdf-c3f94f8a77eb")
+		)
+		(instances
+			(project ""
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/f5d1fc49-a3d0-4c1b-831e-77c3db447f0d"
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Timer:LM555xN")
+		(at 123.19 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e96fc8b-d500-43a7-b818-c94d9038b728")
+		(property "Reference" "U34"
+			(at 125.3333 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LM555xN"
+			(at 125.3333 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 139.7 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm555.pdf"
+			(at 144.78 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Timer, 555 compatible, PDIP-8"
+			(at 123.19 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38f5662d-c18d-4c22-813f-642510934dca")
+		)
+		(pin "7"
+			(uuid "dd47918d-1ec8-4689-8a90-3b3f28e465b8")
+		)
+		(pin "6"
+			(uuid "d95ec6a5-5755-4fee-8407-8aa2f8e501b2")
+		)
+		(pin "5"
+			(uuid "5b36ded6-2608-44b8-beca-48b403d18256")
+		)
+		(pin "4"
+			(uuid "20a87d73-0401-4a02-81a7-4025902d20cf")
+		)
+		(pin "2"
+			(uuid "328d9932-d47f-410a-a5ba-2de7ff5b65aa")
+		)
+		(pin "3"
+			(uuid "e17b7300-14bc-46a5-a4ac-592896204657")
+		)
+		(pin "8"
+			(uuid "5baf51c7-6865-4c4f-9cdf-c3f94f8a77ec")
+		)
+		(instances
+			(project ""
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/f5d1fc49-a3d0-4c1b-831e-77c3db447f0d"
+					(reference "U34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Timer:LM555xN")
+		(at 198.12 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4d61cf6-92a8-4b0f-b87b-c41db0f21d8f")
+		(property "Reference" "U35"
+			(at 200.2633 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LM555xN"
+			(at 200.2633 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 214.63 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm555.pdf"
+			(at 219.71 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Timer, 555 compatible, PDIP-8"
+			(at 198.12 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38f5662d-c18d-4c22-813f-642510934dcb")
+		)
+		(pin "7"
+			(uuid "dd47918d-1ec8-4689-8a90-3b3f28e465b9")
+		)
+		(pin "6"
+			(uuid "d95ec6a5-5755-4fee-8407-8aa2f8e501b3")
+		)
+		(pin "5"
+			(uuid "5b36ded6-2608-44b8-beca-48b403d18257")
+		)
+		(pin "4"
+			(uuid "20a87d73-0401-4a02-81a7-4025902d20d0")
+		)
+		(pin "2"
+			(uuid "328d9932-d47f-410a-a5ba-2de7ff5b65ab")
+		)
+		(pin "3"
+			(uuid "e17b7300-14bc-46a5-a4ac-592896204658")
+		)
+		(pin "8"
+			(uuid "5baf51c7-6865-4c4f-9cdf-c3f94f8a77ed")
+		)
+		(instances
+			(project ""
+				(path "/e9be598a-3531-4036-9661-1b60efe4f57e/f5d1fc49-a3d0-4c1b-831e-77c3db447f0d"
+					(reference "U35")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
