@@ -49,6 +49,7 @@ instructions_table = [
     ("NOP", []),
     ("LDAi", [MHI | CHO, MLI | CLO, RO | AI | CE]),
     ("ADDi", [MHI | CHO, MLI | CLO, RO | BI | CE, EO | AI | FI]),
+    ("SUBi", [MHI | CHO, MLI | CLO, RO | BI | CE, SU | EO | AI | FI]),
     ("JMPi", jumpi),
     ("JEZi", lambda f: (jumpi if zeroSet(f) else skip_jumpi)),
     ("JNZi", lambda f: (jumpi if not zeroSet(f) else skip_jumpi)),
