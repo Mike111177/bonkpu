@@ -154,11 +154,17 @@
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
     </comp>
-    <comp lib="0" loc="(1700,750)" name="Tunnel">
+    <comp lib="0" loc="(1690,750)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="facing" val="north"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(1730,750)" name="Tunnel">
       <a name="label" val="FLAGS"/>
       <a name="width" val="3"/>
     </comp>
-    <comp lib="0" loc="(1720,800)" name="Tunnel">
+    <comp lib="0" loc="(1750,800)" name="Tunnel">
       <a name="label" val="CLK"/>
     </comp>
     <comp lib="0" loc="(1800,1080)" name="Splitter">
@@ -3708,6 +3714,9 @@ c 13*0 40 20 c 0 80 11*0
     <comp lib="5" loc="(1060,1640)" name="LedBar">
       <a name="matrixcols" val="24"/>
     </comp>
+    <comp lib="5" loc="(1700,730)" name="LedBar">
+      <a name="matrixcols" val="3"/>
+    </comp>
     <comp lib="5" loc="(250,1020)" name="Button"/>
     <comp lib="5" loc="(870,1090)" name="DipSwitch">
       <a name="number" val="2"/>
@@ -3814,9 +3823,10 @@ c 13*0 40 20 c 0 80 11*0
     <wire from="(1590,790)" to="(1590,820)"/>
     <wire from="(1590,790)" to="(1610,790)"/>
     <wire from="(1590,820)" to="(1690,820)"/>
-    <wire from="(1670,750)" to="(1700,750)"/>
+    <wire from="(1670,750)" to="(1690,750)"/>
+    <wire from="(1690,750)" to="(1730,750)"/>
     <wire from="(1690,800)" to="(1690,820)"/>
-    <wire from="(1690,800)" to="(1720,800)"/>
+    <wire from="(1690,800)" to="(1750,800)"/>
     <wire from="(1780,1070)" to="(1780,1090)"/>
     <wire from="(1800,1080)" to="(1800,1660)"/>
     <wire from="(1800,590)" to="(1800,610)"/>
