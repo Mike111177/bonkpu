@@ -28,7 +28,7 @@ FLAG_CARRY = 0b100
 zeroSet = lambda f: f & FLAG_ZERO
 signSet = lambda f: f & FLAG_SIGN
 carrySet = lambda f: f & FLAG_CARRY
-overflowSet = lambda f: bool(f & FLAG_SIGN) != bool(f & FLAG_CARRY)
+#overflowSet = lambda f: bool(f & FLAG_SIGN) != bool(f & FLAG_CARRY) #nvm i need a hardware flag for this to work
 
 # Gets prepended to all instructions
 instructions_prefix = [MHI | CHI, MLI | CLI, RO | II | CE, CE]
@@ -57,8 +57,8 @@ instructions_table = [
     ("JNSi", lambda f: (jumpi if not signSet(f) else skip_jumpi)),
     ("JCi", lambda f: (jumpi if carrySet(f) else skip_jumpi)),
     ("JNCi", lambda f: (jumpi if not carrySet(f) else skip_jumpi)),
-    ("JOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
-    ("JNOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
+    #("JOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
+    #("JNOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
     ("HLT", [HLT]),
 ]
 
