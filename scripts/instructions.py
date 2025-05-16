@@ -31,7 +31,7 @@ carrySet = lambda f: f & FLAG_CARRY
 #overflowSet = lambda f: bool(f & FLAG_SIGN) != bool(f & FLAG_CARRY) #nvm i need a hardware flag for this to work
 
 # Gets prepended to all instructions
-instructions_prefix = [MHI | CHO, MLI | CLO, RO | II | CE, CE]
+microcode_prefix = [MHI | CHO, MLI | CLO, RO | II | CE]
 
 jumpi = [
     MHI | CHO,
@@ -45,7 +45,7 @@ jumpi = [
 
 skip_jumpi = [CE, CE]
 
-instructions_table = [
+instruction_microcode = [
     ("NOP", []),
     ("LDAi", [MHI | CHO, MLI | CLO, RO | AI | CE]),
     ("ADDi", [MHI | CHO, MLI | CLO, RO | BI | CE, EO | AI | FI]),
@@ -62,8 +62,10 @@ instructions_table = [
     ("HLT", [HLT]),
 ]
 
-def instruction_post_fn(instruction: list[int]):
+def microcode_post_fn(instruction: list[int]):
     for i in range(len(instruction) - 1, -1, -1):
         if instruction[i]:
             instruction[i] |= IE
             break
+
+instruction_table = {ins: idx for idx, (ins, _) in enumerate(instruction_microcode)}

@@ -1,0 +1,3 @@
+ADD 5
+JNC 0
+HLT

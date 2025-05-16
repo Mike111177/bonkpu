@@ -6,7 +6,7 @@ import shutil
 import struct
 import tempfile
 
-from instructions import instructions_table, instructions_prefix, instruction_post_fn
+from instructions import instruction_microcode, microcode_prefix, microcode_post_fn
 
 DEFAULT_OUTPUT_FOLDER = os.path.join(os.path.dirname(__file__), "..", "bin")
 
@@ -69,9 +69,9 @@ def write_instructions(
 
 
 if __name__ == "__main__":
-    print_instructions(instructions_table)
+    print_instructions(instruction_microcode)
     write_instructions(
-        instructions_table,
-        prefix=instructions_prefix,
-        post_fn=instruction_post_fn,
+        instruction_microcode,
+        prefix=microcode_prefix,
+        post_fn=microcode_post_fn,
     )
