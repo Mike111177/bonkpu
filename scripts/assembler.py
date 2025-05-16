@@ -1,5 +1,6 @@
 import argparse
 from pprint import pprint
+import re
 import struct
 
 from instructions import instruction_table as it, instruction_variants as iv
@@ -25,9 +26,11 @@ def parse_arg8(arg: str):
     return [parse_number(arg)]
 
 
-def parse_line(words: str):
-    if words[0].startswith("."):
-        return ("LABEL", words[0][1:])
+def parse_line(words: list[str]):
+    if not words or words[0].startswith(";"):
+        return None
+    if words[0][-1] == ":" or (len(words) == 1 and not words[0].isupper()):
+        return ("LABEL", words[0].rstrip(":"))
 
     instr, *args = words
     modes = iv.get(instr)
@@ -41,11 +44,12 @@ def parse_line(words: str):
             raise ValueError(f"Instruction '{instr}' expects an argument")
 
     arg = args[0]
-    if arg.startswith("$"):
-        if "a" in modes:
-            return [it[modes["a"]], *parse_arg16(arg[1:])]
-        else:
-            raise ValueError(f"Instruction '{instr}' does not support argument: {arg}")
+    if arg.startswith("$") and "a" in modes:
+        return [it[modes["a"]], *parse_arg16(arg[1:])]
+    elif re.match(r"^[a-zA-Z_]\w*$", arg):
+        if "a" not in modes:
+            raise ValueError(f"Instruction '{instr}' does not support label arguments")
+        return [it[modes["a"]], arg]
     elif "i" in modes:
         return [it[modes["i"]], *parse_arg8(arg)]
     else:
@@ -54,23 +58,42 @@ def parse_line(words: str):
 
 def read_file(filepath):
     with open(filepath, "r") as file:
-        return [
-            parse_line(words)
-            for line in file
-            if len(words := line.upper().split(";")[0].strip().split())
-        ]
+        return [            line for line in file        ]
 
 
 def write_machine_code(filepath: str, code):
     with open(filepath, "wb") as file:
-        for ins in code:
-            for bt in ins:
-                file.write(bytes([bt]))
+        file.write(bytes(code))
 
 
 def assemble_file(infile, outfile):
-    code = read_file(infile)
-    write_machine_code(outfile, code)
+    lines = read_file(infile)
+
+    ir = []
+    labels = {}
+    pos = 0
+    for line in lines:
+        if len(words := line.upper().split(";")[0].strip().split()):
+            parsed = parse_line(words)
+            if isinstance(parsed, tuple):
+                labels[parsed[1]] = pos
+            else:
+                ir.append(parsed)
+                pos += len(parsed)
+
+    final_output = []
+    for instr in ir:
+        for byte in instr:
+            if isinstance(byte, str):  # label to resolve
+                if byte not in labels:
+                    raise ValueError(f"Undefined label: {byte}")
+                label_addr = labels[byte]
+                final_output.extend(struct.pack("<H", label_addr))
+            else:
+                final_output.append(byte)
+    
+    write_machine_code(outfile, final_output)
+
 
 
 def main():

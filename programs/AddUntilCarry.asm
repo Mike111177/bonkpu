@@ -1,3 +1,4 @@
-ADD 5
-JNC $0
-HLT
+loop:
+    ADD 5
+    JNC loop
+    HLT
