@@ -1,3 +1,6 @@
+from collections import defaultdict
+
+
 HLT = 1 << 23
 MHI = 1 << 22
 MLI = 1 << 21
@@ -56,13 +59,13 @@ instruction_microcode = [
     ("ADDa", [*select_address_arg, BI | RO, EO | AI | FI]),
     ("ADDi", [*select_count, RO | BI | CE, EO | AI | FI]),
     ("SUBi", [*select_count, RO | BI | CE, SU | EO | AI | FI]),
-    ("JMPi", jumpi),
-    ("JEZi", lambda f: (jumpi if zeroSet(f) else skip_jumpi)),
-    ("JNZi", lambda f: (jumpi if not zeroSet(f) else skip_jumpi)),
-    ("JSi", lambda f: (jumpi if signSet(f) else skip_jumpi)),
-    ("JNSi", lambda f: (jumpi if not signSet(f) else skip_jumpi)),
-    ("JCi", lambda f: (jumpi if carrySet(f) else skip_jumpi)),
-    ("JNCi", lambda f: (jumpi if not carrySet(f) else skip_jumpi)),
+    ("JMPa", jumpi),
+    ("JEZa", lambda f: (jumpi if zeroSet(f) else skip_jumpi)),
+    ("JNZa", lambda f: (jumpi if not zeroSet(f) else skip_jumpi)),
+    ("JSa", lambda f: (jumpi if signSet(f) else skip_jumpi)),
+    ("JNSa", lambda f: (jumpi if not signSet(f) else skip_jumpi)),
+    ("JCa", lambda f: (jumpi if carrySet(f) else skip_jumpi)),
+    ("JNCa", lambda f: (jumpi if not carrySet(f) else skip_jumpi)),
     # ("JOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
     # ("JNOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
     ("HLT", [HLT]),
@@ -77,3 +80,12 @@ def microcode_post_fn(instruction: list[int]):
 
 
 instruction_table = {ins: idx for idx, (ins, _) in enumerate(instruction_microcode)}
+instruction_variants = defaultdict(dict)
+for variant, opcode in instruction_table.items():
+    if variant[-1] in {"i", "a"}:
+        base = variant[:-1]
+        mode = variant[-1]
+    else:
+        base = variant
+        mode = None
+    instruction_variants[base][mode] = variant

@@ -2,7 +2,8 @@ import argparse
 from pprint import pprint
 import struct
 
-from instructions import instruction_table as it
+from instructions import instruction_table as it, instruction_variants as iv
+
 
 def parse_number(s):
     s = s.strip().lower()
@@ -15,8 +16,10 @@ def parse_number(s):
     else:
         return int(s, 10)
 
+
 def parse_arg16(arg: str):
     return struct.pack("<H", parse_number(arg))
+
 
 def parse_arg8(arg: str):
     return [parse_number(arg)]
@@ -25,36 +28,28 @@ def parse_arg8(arg: str):
 def parse_line(words: str):
     if words[0].startswith("."):
         return ("LABEL", words[0][1:])
+
+    instr, *args = words
+    modes = iv.get(instr)
+    if modes is None:
+        raise ValueError(f"Unknown instruction: {instr}")
+
+    if not args:
+        if None in modes:
+            return [it[modes[None]]]
+        else:
+            raise ValueError(f"Instruction '{instr}' expects an argument")
+
+    arg = args[0]
+    if arg.startswith("$"):
+        if "a" in modes:
+            return [it[modes["a"]], *parse_arg16(arg[1:])]
+        else:
+            raise ValueError(f"Instruction '{instr}' does not support argument: {arg}")
+    elif "i" in modes:
+        return [it[modes["i"]], *parse_arg8(arg)]
     else:
-        match words:
-            case ["LDA", arg]:
-                match arg[0]:
-                    case "$":
-                        return [it["LDAa"], *parse_arg16(arg[1:])]
-                    case _:
-                        return [it["LDAi"], *parse_arg8(arg)]
-            case ["STA", arg]:
-                match arg[0]:
-                    case "$":
-                        return [it["STAa"], *parse_arg16(arg[1:])]
-            case ["ADD", arg]:
-                match arg[0]:
-                    case "$":
-                        return [it["ADDa"], *parse_arg16(arg[1:])]
-                    case _:
-                        return [it["ADDi"], *parse_arg8(arg)]
-            case ["SUB", arg]:
-                return [it["SUBi"], *parse_arg8(arg)]
-            case ["JMP", arg]:
-                match arg[0]:
-                    case "$":
-                        return [it["JMPi"], *parse_arg16(arg[1:])]
-            case ["JNC", arg]:
-                match arg[0]:
-                    case "$":
-                        return [it["JNCi"], *parse_arg16(arg[1:])]
-            case ["HLT"]:
-                return [it["HLT"]]
+        raise ValueError(f"Instruction '{instr}' does not support argument: {arg}")
 
 
 def read_file(filepath):
@@ -64,12 +59,14 @@ def read_file(filepath):
             for line in file
             if len(words := line.upper().split(";")[0].strip().split())
         ]
-    
+
+
 def write_machine_code(filepath: str, code):
     with open(filepath, "wb") as file:
         for ins in code:
             for bt in ins:
                 file.write(bytes([bt]))
+
 
 def assemble_file(infile, outfile):
     code = read_file(infile)
