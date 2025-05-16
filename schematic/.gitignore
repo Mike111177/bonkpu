@@ -10,6 +10,7 @@
 *.bck
 *.kicad_pcb-bak
 *.kicad_sch-bak
+*.kicad_sch.lck
 *.kicad_prl
 *.sch-bak
 *~
