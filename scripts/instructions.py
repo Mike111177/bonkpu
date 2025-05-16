@@ -39,9 +39,9 @@ select_count = [MLI | CLO, MHI | CHO]
 # Gets prepended to all instructions
 microcode_prefix = [*select_count, RO | II | CE]
 
-jumpi = [*select_count, RO | BI | CE, *select_count, CHI | RO | CE, CLI | BO]
+jumpa = [*select_count, RO | BI | CE, *select_count, CHI | RO | CE, CLI | BO]
 
-skip_jumpi = [CE, CE]
+skip_jumpa = [CE, CE]
 
 select_address_arg = [
     *select_count,
@@ -53,21 +53,22 @@ select_address_arg = [
 
 instruction_microcode = [
     ("NOP", []),
-    ("LDAi", [*select_count, RO | AI | CE]),
-    ("LDAa", [*select_address_arg, AI | RO]),
-    ("STAa", [*select_address_arg, RI | AO]),
-    ("ADDa", [*select_address_arg, BI | RO, EO | AI | FI]),
+    ("LDi", [*select_count, RO | AI | CE]),
+    ("LDa", [*select_address_arg, AI | RO]),
+    ("STa", [*select_address_arg, RI | AO]),
     ("ADDi", [*select_count, RO | BI | CE, EO | AI | FI]),
+    ("ADDa", [*select_address_arg, BI | RO, EO | AI | FI]),
     ("SUBi", [*select_count, RO | BI | CE, SU | EO | AI | FI]),
-    ("JMPa", jumpi),
-    ("JEZa", lambda f: (jumpi if zeroSet(f) else skip_jumpi)),
-    ("JNZa", lambda f: (jumpi if not zeroSet(f) else skip_jumpi)),
-    ("JSa", lambda f: (jumpi if signSet(f) else skip_jumpi)),
-    ("JNSa", lambda f: (jumpi if not signSet(f) else skip_jumpi)),
-    ("JCa", lambda f: (jumpi if carrySet(f) else skip_jumpi)),
-    ("JNCa", lambda f: (jumpi if not carrySet(f) else skip_jumpi)),
-    # ("JOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
-    # ("JNOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
+    ("SUBa", [*select_address_arg, BI | RO, SU | EO | AI | FI]),
+    ("JMPa", jumpa),
+    ("JEZa", lambda f: (jumpa if zeroSet(f) else skip_jumpa)),
+    ("JNZa", lambda f: (jumpa if not zeroSet(f) else skip_jumpa)),
+    ("JSa", lambda f: (jumpa if signSet(f) else skip_jumpa)),
+    ("JNSa", lambda f: (jumpa if not signSet(f) else skip_jumpa)),
+    ("JCa", lambda f: (jumpa if carrySet(f) else skip_jumpa)),
+    ("JNCa", lambda f: (jumpa if not carrySet(f) else skip_jumpa)),
+    # ("JVi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
+    # ("JNVi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
     ("HLT", [HLT]),
 ]
 
