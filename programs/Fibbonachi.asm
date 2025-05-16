@@ -1,0 +1,12 @@
+;init
+LDA 1     ; 2
+STA $0x8000 ; 3
+STA $0x8001 ; loop
+LDA $0x8000
+ADD $0x8001
+STA $0x8000
+LDA $0x8001
+ADD $0x8000
+JNC $5
+LDA $0x8000; A should be 233
+HLT

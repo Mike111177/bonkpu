@@ -28,28 +28,34 @@ FLAG_CARRY = 0b100
 zeroSet = lambda f: f & FLAG_ZERO
 signSet = lambda f: f & FLAG_SIGN
 carrySet = lambda f: f & FLAG_CARRY
-#overflowSet = lambda f: bool(f & FLAG_SIGN) != bool(f & FLAG_CARRY) #nvm i need a hardware flag for this to work
+# overflowSet = lambda f: bool(f & FLAG_SIGN) != bool(f & FLAG_CARRY) #nvm i need a hardware flag for this to work
+
+
+select_count = [MLI | CLO, MHI | CHO]
 
 # Gets prepended to all instructions
-microcode_prefix = [MHI | CHO, MLI | CLO, RO | II | CE]
+microcode_prefix = [*select_count, RO | II | CE]
 
-jumpi = [
-    MHI | CHO,
-    MLI | CLO,
-    RO | BI | CE,
-    MHI | CHO,
-    MLI | CLO,
-    CHI | RO | CE,
-    CLI | BO,
-]
+jumpi = [*select_count, RO | BI | CE, *select_count, CHI | RO | CE, CLI | BO]
 
 skip_jumpi = [CE, CE]
 
+select_address_arg = [
+    *select_count,
+    RO | BI | CE,
+    *select_count,
+    MHI | RO | CE,
+    MLI | BO,
+]
+
 instruction_microcode = [
     ("NOP", []),
-    ("LDAi", [MHI | CHO, MLI | CLO, RO | AI | CE]),
-    ("ADDi", [MHI | CHO, MLI | CLO, RO | BI | CE, EO | AI | FI]),
-    ("SUBi", [MHI | CHO, MLI | CLO, RO | BI | CE, SU | EO | AI | FI]),
+    ("LDAi", [*select_count, RO | AI | CE]),
+    ("LDAa", [*select_address_arg, AI | RO]),
+    ("STAa", [*select_address_arg, RI | AO]),
+    ("ADDa", [*select_address_arg, BI | RO, EO | AI | FI]),
+    ("ADDi", [*select_count, RO | BI | CE, EO | AI | FI]),
+    ("SUBi", [*select_count, RO | BI | CE, SU | EO | AI | FI]),
     ("JMPi", jumpi),
     ("JEZi", lambda f: (jumpi if zeroSet(f) else skip_jumpi)),
     ("JNZi", lambda f: (jumpi if not zeroSet(f) else skip_jumpi)),
@@ -57,15 +63,17 @@ instruction_microcode = [
     ("JNSi", lambda f: (jumpi if not signSet(f) else skip_jumpi)),
     ("JCi", lambda f: (jumpi if carrySet(f) else skip_jumpi)),
     ("JNCi", lambda f: (jumpi if not carrySet(f) else skip_jumpi)),
-    #("JOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
-    #("JNOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
+    # ("JOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
+    # ("JNOi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
     ("HLT", [HLT]),
 ]
+
 
 def microcode_post_fn(instruction: list[int]):
     for i in range(len(instruction) - 1, -1, -1):
         if instruction[i]:
             instruction[i] |= IE
             break
+
 
 instruction_table = {ins: idx for idx, (ins, _) in enumerate(instruction_microcode)}

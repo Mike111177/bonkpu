@@ -4,11 +4,22 @@ import struct
 
 from instructions import instruction_table as it
 
+def parse_number(s):
+    s = s.strip().lower()
+    if s.startswith("0x"):
+        return int(s, 16)
+    elif s.startswith("0b"):
+        return int(s, 2)
+    elif s.startswith("0o"):
+        return int(s, 8)
+    else:
+        return int(s, 10)
+
 def parse_arg16(arg: str):
-    return struct.pack(">H", int(arg))
+    return struct.pack("<H", parse_number(arg))
 
 def parse_arg8(arg: str):
-    return [int(arg)]
+    return [parse_number(arg)]
 
 
 def parse_line(words: str):
@@ -17,13 +28,31 @@ def parse_line(words: str):
     else:
         match words:
             case ["LDA", arg]:
-                return [it["LDAi"], *parse_arg8(arg)]
+                match arg[0]:
+                    case "$":
+                        return [it["LDAa"], *parse_arg16(arg[1:])]
+                    case _:
+                        return [it["LDAi"], *parse_arg8(arg)]
+            case ["STA", arg]:
+                match arg[0]:
+                    case "$":
+                        return [it["STAa"], *parse_arg16(arg[1:])]
             case ["ADD", arg]:
-                return [it["ADDi"], *parse_arg8(arg)]
+                match arg[0]:
+                    case "$":
+                        return [it["ADDa"], *parse_arg16(arg[1:])]
+                    case _:
+                        return [it["ADDi"], *parse_arg8(arg)]
             case ["SUB", arg]:
                 return [it["SUBi"], *parse_arg8(arg)]
+            case ["JMP", arg]:
+                match arg[0]:
+                    case "$":
+                        return [it["JMPi"], *parse_arg16(arg[1:])]
             case ["JNC", arg]:
-                return [it["JNCi"], *parse_arg16(arg)]
+                match arg[0]:
+                    case "$":
+                        return [it["JNCi"], *parse_arg16(arg[1:])]
             case ["HLT"]:
                 return [it["HLT"]]
 
