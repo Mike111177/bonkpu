@@ -31,7 +31,7 @@ carrySet = lambda f: f & FLAG_CARRY
 #overflowSet = lambda f: bool(f & FLAG_SIGN) != bool(f & FLAG_CARRY) #nvm i need a hardware flag for this to work
 
 # Gets prepended to all instructions
-instructions_prefix = [MHI | CHI, MLI | CLI, RO | II | CE, CE]
+instructions_prefix = [MHI | CHO, MLI | CLO, RO | II | CE, CE]
 
 jumpi = [
     MHI | CHO,
