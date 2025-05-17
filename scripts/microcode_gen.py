@@ -12,15 +12,17 @@ DEFAULT_OUTPUT_FOLDER = os.path.join(os.path.dirname(__file__), "..", "bin")
 
 
 def print_instructions(table):
-    print(f" IDX (hx)| INS | V | OPCODE")
-    print("--------------------------------")
-    for idx, [ins, _] in enumerate(table):
+    print(f" IDX (hx)| INS | V | OPCODE    | Len")
+    print("-------------------------------------")
+    for idx, [ins, micro] in enumerate(table):
         op, varient = (
             (ins[: m.start()], ins[m.start() :])
             if (m := re.search(r"[a-z]", ins))
             else (ins, "")
         )
-        print(f" {idx:02} ({idx:02x}) | {op:>4} | {varient:1} | {idx:08b}")
+        print(
+            f" {idx:02} ({idx:02x}) | {op:>4} | {varient:1} | {idx:08b} | {len(micro) + len(microcode_prefix) if isinstance(micro, list) else "?"}"
+        )
 
 
 def write_instructions(
