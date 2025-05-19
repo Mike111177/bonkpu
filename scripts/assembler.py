@@ -30,7 +30,7 @@ def parse_line(words: list[str]):
     if not words or words[0].startswith(";"):
         return None
     if words[0][-1] == ":" or (len(words) == 1 and not words[0].isupper()):
-        return ("LABEL", words[0].rstrip(":"))
+        return ("LABEL", words[0].rstrip(":")), 0
 
     instr, *args = words
     modes = iv.get(instr)
@@ -39,19 +39,19 @@ def parse_line(words: list[str]):
 
     if not args:
         if None in modes:
-            return [it[modes[None]]]
+            return [it[modes[None]]], 1
         else:
             raise ValueError(f"Instruction '{instr}' expects an argument")
 
     arg = args[0]
     if arg.startswith("$") and "a" in modes:
-        return [it[modes["a"]], *parse_arg16(arg[1:])]
+        return [it[modes["a"]], *parse_arg16(arg[1:])], 3
     elif re.match(r"^[a-zA-Z_]\w*$", arg):
         if "a" not in modes:
             raise ValueError(f"Instruction '{instr}' does not support label arguments")
-        return [it[modes["a"]], arg]
+        return [it[modes["a"]], arg], 3
     elif "i" in modes:
-        return [it[modes["i"]], *parse_arg8(arg)]
+        return [it[modes["i"]], *parse_arg8(arg)], 2
     else:
         raise ValueError(f"Instruction '{instr}' does not support argument: {arg}")
 
@@ -74,17 +74,18 @@ def assemble_file(infile, outfile):
     pos = 0
     for line in lines:
         if len(words := line.upper().split(";")[0].strip().split()):
-            parsed = parse_line(words)
+            parsed, size = parse_line(words)
             if isinstance(parsed, tuple):
                 labels[parsed[1]] = pos
             else:
                 ir.append(parsed)
-                pos += len(parsed)
+            # print(f"{line.strip()} - {pos:x}")
+            pos += size
 
     final_output = []
     for instr in ir:
         for byte in instr:
-            if isinstance(byte, str):  # label to resolve
+            if isinstance(byte, str):
                 if byte not in labels:
                     raise ValueError(f"Undefined label: {byte}")
                 label_addr = labels[byte]
@@ -93,6 +94,7 @@ def assemble_file(infile, outfile):
                 final_output.append(byte)
     
     write_machine_code(outfile, final_output)
+    # pprint(labels)
 
 
 
