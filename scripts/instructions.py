@@ -91,7 +91,6 @@ instruction_microcode = [
     ("PSH", [*select_stack, RI | AO | SD]),
     ("POP", [SI, *select_stack, AI | RO]),
     ("CALLa", [*select_stack, RI | CHO | SD, *select_stack, RI | CLO | SD, *jumpa]),
-    # FIXME: RET corrupts the stack pointer for some reason
     ("RET", [SI, *select_stack, CLI | RO | SI, *select_stack, CHI | RO, *skip_a]),
     # ("JVi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
     # ("JNVi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
