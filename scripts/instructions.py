@@ -85,6 +85,8 @@ instruction_microcode = [
     ("JNSa", lambda f: (jumpa if not signSet(f) else skip_a)),
     ("JCa", lambda f: (jumpa if carrySet(f) else skip_a)),
     ("JNCa", lambda f: (jumpa if not carrySet(f) else skip_a)),
+    # ("JVi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
+    # ("JNVi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
     ("SEI", [SE]),
     ("SD", [SD]),
     ("SI", [SI]),
@@ -92,8 +94,6 @@ instruction_microcode = [
     ("POP", [SI, *select_stack, AI | RO]),
     ("CALLa", [*select_stack, RI | CHO | SD, *select_stack, RI | CLO | SD, *jumpa]),
     ("RET", [SI, *select_stack, CLI | RO | SI, *select_stack, CHI | RO, *skip_a]),
-    # ("JVi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
-    # ("JNVi", lambda f: (jumpi if overflowSet(f) else skip_jumpi)),
     ("HLT", [HLT]),
 ]
 
