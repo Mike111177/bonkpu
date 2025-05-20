@@ -71,6 +71,11 @@ jumpa = [
 
 skip_a = [CE, CE]
 
+select_address = [
+    MLI | RO,
+    MHI | RO | MB | MU,
+]
+
 select_address_arg = [
     *select_count,
     MLI | RO | CE,
@@ -86,8 +91,9 @@ instruction_microcode = [
     ("NOP", []),
     ("LDi", [*select_count, RO | AI | CE]),
     ("LDa", [*select_address_arg, AI | RO]),
-    ("LDp", [*select_address_arg]),
+    ("LDp", [*select_address_arg, *select_address, AI | RO]),
     ("STa", [*select_address_arg, RI | AO]),
+    ("STp", [*select_address_arg, *select_address, RI | AO]),
     ("ADDi", [*select_count, RO | BI | CE, EO | AI | FI]),
     ("ADDa", [*select_address_arg, BI | RO, EO | AI | FI]),
     ("SUBi", [*select_count, RO | BI | CE, SU | EO | AI | FI]),
@@ -122,7 +128,7 @@ def microcode_post_fn(instruction: list[int]):
 instruction_table = {ins: idx for idx, (ins, _) in enumerate(instruction_microcode)}
 instruction_variants = defaultdict(dict)
 for variant, opcode in instruction_table.items():
-    if variant[-1] in {"i", "a"}:
+    if variant[-1] in {"i", "a", "p"}:
         base = variant[:-1]
         mode = variant[-1]
     else:

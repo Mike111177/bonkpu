@@ -44,7 +44,9 @@ def parse_line(words: list[str]):
             raise ValueError(f"Instruction '{instr}' expects an argument")
 
     arg = args[0]
-    if arg.startswith("$") and "a" in modes:
+    if arg.startswith("#") and "p" in modes:
+        return [it[modes["p"]], *parse_arg16(arg[1:])], 3
+    elif arg.startswith("$") and "a" in modes:
         return [it[modes["a"]], *parse_arg16(arg[1:])], 3
     elif re.match(r"^[a-zA-Z_]\w*$", arg):
         if "a" not in modes:
