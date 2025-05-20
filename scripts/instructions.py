@@ -6,38 +6,48 @@ HLT = 1 << 23
 MHI = 1 << 22
 MLI = 1 << 21
 RI = 1 << 20
-RO = 1 << 19
+MU = 1 << 19
+MB = 1 << 18
 # Instruction Control
-II = 1 << 18
+II = 1 << 17
 # A Control
-AI = 1 << 17
-AO = 1 << 16
+AI = 1 << 16
 # B Control
 BI = 1 << 15
-BO = 1 << 14
 # ALU Control
-EO = 1 << 13
-SU = 1 << 12
-FI = 1 << 11
+SU = 1 << 14
+FI = 1 << 13
 # Counter control
-CE = 1 << 10
-CHO = 1 << 9
-CLO = 1 << 8
-CHI = 1 << 7
-CLI = 1 << 6
+CE = 1 << 12
+CHI = 1 << 11
+CLI = 1 << 10
 # Stack Control
-STACK_MODE1 = 1 << 5
-STACK_MODE0 = 1 << 4
+STACK_MODE1 = 1 << 9
+STACK_MODE0 = 1 << 8
 SE = STACK_MODE0
 SI = STACK_MODE1
 SD = STACK_MODE1 | STACK_MODE0
-SHO = 1 << 3
-SLO = 1 << 2
-# Reserved
-X = 1 << 1
-# Instruction end
-IE = 1 << 0
+# Memory Update
 
+# Reserved
+X = 1 << 8
+X = 1 << 7
+X = 1 << 6
+X = 1 << 5
+# Instruction end
+IE = 1 << 4
+# Bus control (4 bottom bits)
+RO = 1
+AO = 2
+BO = 3
+EO = 4
+CHO = 5
+CLO = 6
+SHO = 7
+SLO = 8
+
+
+# Flag logic
 FLAG_ZERO = 0b1
 FLAG_SIGN = 0b10
 FLAG_CARRY = 0b100
@@ -47,32 +57,36 @@ carrySet = lambda f: f & FLAG_CARRY
 # overflowSet = lambda f: bool(f & FLAG_SIGN) != bool(f & FLAG_CARRY) #nvm i need a hardware flag for this to work
 
 
-select_count = [MLI | CLO, MHI | CHO]
+select_count = [MLI | CLO, MHI | CHO | MU]
 
 # Gets prepended to all instructions
 ld_op = [*select_count, RO | II | CE]
 
-jumpa = [*select_count, RO | BI | CE, *select_count, CHI | RO | CE, CLI | BO]
+jumpa = [
+    *select_count,
+    RO | BI | CE,
+    CHI | RO | MB | CE,
+    CLI | BO,
+]
 
 skip_a = [CE, CE]
 
 select_address_arg = [
     *select_count,
-    RO | BI | CE,
-    *select_count,
-    MHI | RO | CE,
-    MLI | BO,
+    MLI | RO | CE,
+    MHI | RO | MB | MU | CE,
 ]
 
 select_stack = [
     MLI | SLO,
-    MHI | SHO,
+    MHI | SHO | MU,
 ]
 
 instruction_microcode = [
     ("NOP", []),
     ("LDi", [*select_count, RO | AI | CE]),
     ("LDa", [*select_address_arg, AI | RO]),
+    ("LDp", [*select_address_arg]),
     ("STa", [*select_address_arg, RI | AO]),
     ("ADDi", [*select_count, RO | BI | CE, EO | AI | FI]),
     ("ADDa", [*select_address_arg, BI | RO, EO | AI | FI]),
