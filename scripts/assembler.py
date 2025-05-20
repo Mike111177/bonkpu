@@ -28,7 +28,7 @@ def parse_arg8(arg: str):
 
 def parse_line(words: list[str]):
     if not words or words[0].startswith(";"):
-        return None
+        return None, 0
     if words[0][-1] == ":" or (len(words) == 1 and not words[0].isupper()):
         return ("LABEL", words[0].rstrip(":")), 0
 
@@ -58,7 +58,7 @@ def parse_line(words: list[str]):
 
 def read_file(filepath):
     with open(filepath, "r") as file:
-        return [            line for line in file        ]
+        return [line for line in file]
 
 
 def write_machine_code(filepath: str, code):
@@ -71,9 +71,19 @@ def assemble_file(infile, outfile):
 
     ir = []
     labels = {}
+    defs = {}
     pos = 0
     for line in lines:
-        if len(words := line.upper().split(";")[0].strip().split()):
+        before_comment = line.upper().split(";")[0]
+        if "=" in before_comment:
+            name, value = [section.strip() for section in before_comment.split("=")]
+            defs[name] = value
+        elif len(
+            words := [
+                defs[word] if word in defs else word
+                for word in before_comment.strip().split()
+            ]
+        ):
             parsed, size = parse_line(words)
             if isinstance(parsed, tuple):
                 labels[parsed[1]] = pos
@@ -92,10 +102,10 @@ def assemble_file(infile, outfile):
                 final_output.extend(struct.pack("<H", label_addr))
             else:
                 final_output.append(byte)
-    
+
     write_machine_code(outfile, final_output)
     # pprint(labels)
-
+    # pprint(defs)
 
 
 def main():
