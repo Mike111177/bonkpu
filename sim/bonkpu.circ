@@ -92,11 +92,6 @@
       <a name="label" val="II"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(2040,1670)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="RO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
     <comp lib="0" loc="(2050,1230)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="bit1" val="0"/>
@@ -122,80 +117,9 @@
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
     </comp>
-    <comp lib="0" loc="(2100,1070)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2100,1090)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MHI"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2100,1110)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MLI"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2100,1130)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MU"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2100,890)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2100,910)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CE"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2100,930)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CHI"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2100,950)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CHO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2100,970)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLI"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2100,990)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
     <comp lib="0" loc="(2110,1870)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="IE"/>
-    </comp>
-    <comp lib="0" loc="(2110,760)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2110,780)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="STACK_MODE"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-      <a name="width" val="2"/>
-    </comp>
-    <comp lib="0" loc="(2110,800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="SHO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(2110,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="SLO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(2140,1950)" name="Constant">
       <a name="value" val="0x0"/>
@@ -205,22 +129,92 @@
       <a name="facing" val="east"/>
       <a name="label" val="RI"/>
     </comp>
-    <comp lib="0" loc="(2350,1420)" name="Tunnel">
+    <comp lib="0" loc="(2320,1070)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(2390,1110)" name="Tunnel">
+    <comp lib="0" loc="(2320,1090)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="MB"/>
+      <a name="label" val="MHI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(2410,1150)" name="Constant">
+    <comp lib="0" loc="(2320,1110)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MLI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2320,1130)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MU"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2320,890)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2320,910)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CE"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2320,930)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CHI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2320,950)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CHO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2320,970)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2320,990)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2330,760)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2330,780)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="STACK_MODE"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(2330,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="SHO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2330,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="SLO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2370,2010)" name="Constant">
       <a name="value" val="0x0"/>
-      <a name="width" val="16"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(2390,1420)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
     </comp>
     <comp lib="0" loc="(2420,1710)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="FLAGS"/>
       <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(2440,2000)" name="Tunnel">
+      <a name="label" val="MS0"/>
     </comp>
     <comp lib="0" loc="(2460,1780)" name="Splitter">
       <a name="appear" val="right"/>
@@ -243,41 +237,124 @@
       <a name="incoming" val="15"/>
       <a name="spacing" val="3"/>
     </comp>
-    <comp lib="0" loc="(2730,1770)" name="Splitter">
+    <comp lib="0" loc="(2610,1110)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MB"/>
+    </comp>
+    <comp lib="0" loc="(2630,1150)" name="Constant">
+      <a name="value" val="0x0"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(2700,1660)" name="Tunnel">
+      <a name="label" val="RO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2740,1770)" name="Splitter">
       <a name="facing" val="north"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
     <comp lib="0" loc="(2740,760)" name="Pull Resistor"/>
-    <comp lib="0" loc="(2790,1590)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BI"/>
-    </comp>
-    <comp lib="0" loc="(2800,1620)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(2820,1200)" name="Tunnel">
+    <comp lib="0" loc="(2780,1200)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="AI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(2820,1250)" name="Tunnel">
+    <comp lib="0" loc="(2780,1220)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(2820,1320)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="AO"/>
-    </comp>
-    <comp lib="0" loc="(2860,1510)" name="Tunnel">
+    <comp lib="0" loc="(2780,1510)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="EO"/>
     </comp>
-    <comp lib="0" loc="(2870,1700)" name="Tunnel">
+    <comp lib="0" loc="(2780,1590)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2780,1610)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2780,1700)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="BO"/>
     </comp>
-    <comp lib="0" loc="(2940,2110)" name="Splitter">
+    <comp lib="0" loc="(2790,1320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="AO"/>
+    </comp>
+    <comp lib="0" loc="(2840,1330)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="SU"/>
+    </comp>
+    <comp lib="0" loc="(2840,1380)" name="Constant">
+      <a name="value" val="0x0"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(2840,1400)" name="Constant">
+      <a name="value" val="0xff"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(2900,1000)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MS0"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(2900,1110)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(2900,1140)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(2910,1770)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </comp>
+    <comp lib="0" loc="(2930,1570)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(2930,1600)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(3000,980)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="HLT"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3010,1970)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit10" val="3"/>
+      <a name="bit11" val="4"/>
+      <a name="bit12" val="5"/>
+      <a name="bit13" val="6"/>
+      <a name="bit14" val="7"/>
+      <a name="bit15" val="8"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="bit8" val="2"/>
+      <a name="bit9" val="2"/>
+      <a name="fanout" val="9"/>
+      <a name="incoming" val="16"/>
+      <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="0" loc="(3010,2020)" name="Splitter">
       <a name="bit1" val="0"/>
       <a name="bit10" val="1"/>
       <a name="bit11" val="1"/>
@@ -285,15 +362,7 @@
       <a name="bit13" val="1"/>
       <a name="bit14" val="1"/>
       <a name="bit15" val="1"/>
-      <a name="bit16" val="2"/>
-      <a name="bit17" val="2"/>
-      <a name="bit18" val="2"/>
-      <a name="bit19" val="2"/>
       <a name="bit2" val="0"/>
-      <a name="bit20" val="2"/>
-      <a name="bit21" val="2"/>
-      <a name="bit22" val="2"/>
-      <a name="bit23" val="2"/>
       <a name="bit3" val="0"/>
       <a name="bit4" val="0"/>
       <a name="bit5" val="0"/>
@@ -301,303 +370,214 @@
       <a name="bit7" val="0"/>
       <a name="bit8" val="1"/>
       <a name="bit9" val="1"/>
-      <a name="facing" val="north"/>
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="24"/>
-    </comp>
-    <comp lib="0" loc="(2970,1330)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="SU"/>
-    </comp>
-    <comp lib="0" loc="(2970,1380)" name="Constant">
-      <a name="value" val="0x0"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(2970,1400)" name="Constant">
-      <a name="value" val="0xff"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(3060,1570)" name="Probe">
-      <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="radix" val="10unsigned"/>
+      <a name="incoming" val="16"/>
     </comp>
-    <comp lib="0" loc="(3060,1600)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="0" loc="(3130,1110)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(3130,1140)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="0" loc="(3190,2210)" name="Constant">
-      <a name="value" val="0x0"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(3210,1330)" name="Splitter">
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp lib="0" loc="(3210,2130)" name="Splitter">
-      <a name="facing" val="north"/>
-      <a name="fanout" val="24"/>
-      <a name="incoming" val="24"/>
-    </comp>
-    <comp lib="0" loc="(3260,1380)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(3260,1410)" name="Probe">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="0" loc="(3270,1970)" name="Splitter">
-      <a name="bit1" val="0"/>
-      <a name="bit10" val="6"/>
-      <a name="bit11" val="7"/>
-      <a name="bit12" val="8"/>
-      <a name="bit13" val="9"/>
-      <a name="bit14" val="10"/>
-      <a name="bit15" val="11"/>
-      <a name="bit16" val="12"/>
-      <a name="bit17" val="13"/>
-      <a name="bit18" val="14"/>
-      <a name="bit19" val="15"/>
-      <a name="bit2" val="0"/>
-      <a name="bit20" val="16"/>
-      <a name="bit21" val="17"/>
-      <a name="bit22" val="18"/>
-      <a name="bit23" val="19"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="1"/>
-      <a name="bit5" val="2"/>
-      <a name="bit6" val="3"/>
-      <a name="bit7" val="4"/>
-      <a name="bit8" val="5"/>
-      <a name="bit9" val="5"/>
-      <a name="fanout" val="20"/>
-      <a name="incoming" val="24"/>
-      <a name="spacing" val="2"/>
-    </comp>
-    <comp lib="0" loc="(3300,2030)" name="Clock"/>
-    <comp lib="0" loc="(3310,2130)" name="Splitter">
-      <a name="appear" val="right"/>
-      <a name="bit0" val="none"/>
-      <a name="bit1" val="none"/>
-      <a name="bit10" val="none"/>
-      <a name="bit11" val="none"/>
-      <a name="bit12" val="none"/>
-      <a name="bit13" val="none"/>
-      <a name="bit14" val="none"/>
-      <a name="bit15" val="none"/>
-      <a name="bit16" val="none"/>
-      <a name="bit17" val="none"/>
-      <a name="bit18" val="none"/>
-      <a name="bit19" val="none"/>
-      <a name="bit2" val="none"/>
-      <a name="bit20" val="none"/>
-      <a name="bit21" val="none"/>
-      <a name="bit22" val="none"/>
-      <a name="bit23" val="0"/>
-      <a name="bit3" val="none"/>
-      <a name="bit4" val="none"/>
-      <a name="bit5" val="none"/>
-      <a name="bit6" val="none"/>
-      <a name="bit7" val="none"/>
-      <a name="bit8" val="none"/>
-      <a name="bit9" val="none"/>
-      <a name="facing" val="north"/>
-      <a name="fanout" val="1"/>
-      <a name="incoming" val="24"/>
-    </comp>
-    <comp lib="0" loc="(3330,1680)" name="Tunnel">
+    <comp lib="0" loc="(3030,1840)" name="Tunnel">
       <a name="label" val="STACK_MODE"/>
       <a name="labelfont" val="SansSerif bold 10"/>
       <a name="width" val="2"/>
     </comp>
-    <comp lib="0" loc="(3330,1700)" name="Tunnel">
-      <a name="label" val="CLI"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3330,1720)" name="Tunnel">
-      <a name="label" val="CHI"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3330,1740)" name="Tunnel">
-      <a name="label" val="CE"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3330,1760)" name="Tunnel">
+    <comp lib="0" loc="(3030,1860)" name="Tunnel">
       <a name="label" val="FI"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(3330,1780)" name="Tunnel">
+    <comp lib="0" loc="(3030,1880)" name="Tunnel">
       <a name="label" val="SU"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(3330,1800)" name="Tunnel">
-      <a name="label" val="BI"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3330,1820)" name="Tunnel">
-      <a name="label" val="AI"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3330,1840)" name="Tunnel">
-      <a name="label" val="II"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3330,1860)" name="Tunnel">
+    <comp lib="0" loc="(3030,1900)" name="Tunnel">
       <a name="label" val="MB"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(3330,1880)" name="Tunnel">
+    <comp lib="0" loc="(3030,1920)" name="Tunnel">
       <a name="label" val="MU"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(3330,1900)" name="Tunnel">
-      <a name="label" val="RI"/>
+    <comp lib="0" loc="(3030,1940)" name="Tunnel">
+      <a name="label" val="CE"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(3330,1920)" name="Tunnel">
-      <a name="label" val="MLI"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3330,1940)" name="Tunnel">
-      <a name="label" val="MHI"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3330,1960)" name="Tunnel">
-      <a name="label" val="HLT"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3340,1600)" name="Tunnel">
+    <comp lib="0" loc="(3030,1960)" name="Tunnel">
       <a name="label" val="IE"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(3360,1320)" name="Splitter">
+    <comp lib="0" loc="(3080,1330)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(3100,960)" name="Clock"/>
+    <comp lib="0" loc="(3130,1380)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(3130,1410)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(3170,980)" name="Tunnel">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(3220,1730)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(3220,1930)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(3230,1320)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="facing" val="west"/>
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
     </comp>
-    <comp lib="0" loc="(3410,1430)" name="Tunnel">
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(3410,1460)" name="Tunnel">
+    <comp lib="0" loc="(3260,1370)" name="Tunnel">
+      <a name="facing" val="east"/>
       <a name="label" val="FI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(3480,1350)" name="Splitter">
+    <comp lib="0" loc="(3260,1390)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1550)" name="Tunnel">
+      <a name="label" val="RO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1570)" name="Tunnel">
+      <a name="label" val="AO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1590)" name="Tunnel">
+      <a name="label" val="BO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1610)" name="Tunnel">
+      <a name="label" val="EO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1630)" name="Tunnel">
+      <a name="label" val="CHO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1650)" name="Tunnel">
+      <a name="label" val="CLO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1670)" name="Tunnel">
+      <a name="label" val="SHO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1690)" name="Tunnel">
+      <a name="label" val="SLO"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1710)" name="Tunnel">
+      <a name="label" val="HLT"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1750)" name="Tunnel">
+      <a name="label" val="RI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1770)" name="Tunnel">
+      <a name="label" val="AI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1790)" name="Tunnel">
+      <a name="label" val="BI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1810)" name="Tunnel">
+      <a name="label" val="II"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1830)" name="Tunnel">
+      <a name="label" val="CHI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1850)" name="Tunnel">
+      <a name="label" val="CLI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1870)" name="Tunnel">
+      <a name="label" val="MHI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3280,1890)" name="Tunnel">
+      <a name="label" val="MLI"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(3350,1350)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="facing" val="north"/>
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
     </comp>
-    <comp lib="0" loc="(3520,1350)" name="Tunnel">
+    <comp lib="0" loc="(3390,1350)" name="Tunnel">
       <a name="label" val="FLAGS"/>
       <a name="width" val="3"/>
     </comp>
-    <comp lib="0" loc="(3520,2050)" name="Tunnel">
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(3590,1550)" name="Tunnel">
-      <a name="label" val="RO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3590,1570)" name="Tunnel">
-      <a name="label" val="AO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3590,1590)" name="Tunnel">
-      <a name="label" val="BO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3590,1610)" name="Tunnel">
-      <a name="label" val="EO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3590,1630)" name="Tunnel">
-      <a name="label" val="CHO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3590,1650)" name="Tunnel">
-      <a name="label" val="CLO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3590,1670)" name="Tunnel">
-      <a name="label" val="SHO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <comp lib="0" loc="(3590,1690)" name="Tunnel">
-      <a name="label" val="SLO"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
     <comp lib="1" loc="(2120,1920)" name="NOT Gate"/>
     <comp lib="1" loc="(2350,1290)" name="AND Gate"/>
-    <comp lib="1" loc="(2870,1480)" name="Controlled Buffer">
+    <comp lib="1" loc="(2790,1280)" name="Controlled Buffer">
+      <a name="control" val="left"/>
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(2790,1480)" name="Controlled Buffer">
       <a name="control" val="left"/>
       <a name="facing" val="west"/>
       <a name="label" val="EO_GATE"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="1" loc="(2890,1680)" name="Controlled Buffer">
+    <comp lib="1" loc="(2800,1680)" name="Controlled Buffer">
       <a name="control" val="left"/>
       <a name="facing" val="west"/>
       <a name="label" val="B_GATE"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="1" loc="(2900,1280)" name="Controlled Buffer">
-      <a name="control" val="left"/>
-      <a name="facing" val="west"/>
+    <comp lib="1" loc="(2940,1040)" name="XOR Gate"/>
+    <comp lib="1" loc="(2970,1410)" name="XOR Gate">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="1" loc="(3090,1410)" name="XOR Gate">
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="1" loc="(3320,1290)" name="NOR Gate">
+    <comp lib="1" loc="(3000,1020)" name="AND Gate"/>
+    <comp lib="1" loc="(3080,1000)" name="NOR Gate"/>
+    <comp lib="1" loc="(3160,980)" name="AND Gate"/>
+    <comp lib="1" loc="(3190,1290)" name="NOR Gate">
       <a name="inputs" val="8"/>
-    </comp>
-    <comp lib="1" loc="(3380,2150)" name="AND Gate">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="1" loc="(3430,2070)" name="NOR Gate"/>
-    <comp lib="1" loc="(3500,2210)" name="XOR Gate">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="1" loc="(3510,2050)" name="AND Gate"/>
-    <comp lib="1" loc="(3580,2230)" name="NOT Gate">
-      <a name="facing" val="west"/>
     </comp>
     <comp lib="2" loc="(2690,1630)" name="Multiplexer">
       <a name="disabled" val="Z"/>
       <a name="enable" val="true"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="2" loc="(3020,1390)" name="Multiplexer">
+    <comp lib="2" loc="(2890,1390)" name="Multiplexer">
       <a name="selloc" val="tr"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="2" loc="(3480,1700)" name="Decoder">
+    <comp lib="2" loc="(3170,1700)" name="Decoder">
       <a name="enable" val="false"/>
       <a name="select" val="4"/>
     </comp>
-    <comp lib="3" loc="(2490,1160)" name="Adder">
-      <a name="width" val="16"/>
+    <comp lib="2" loc="(3170,1900)" name="Decoder">
+      <a name="enable" val="false"/>
+      <a name="select" val="4"/>
     </comp>
-    <comp lib="3" loc="(3180,1380)" name="Adder"/>
-    <comp lib="3" loc="(3290,2200)" name="Comparator">
+    <comp lib="3" loc="(2420,2000)" name="Comparator">
       <a name="mode" val="unsigned"/>
       <a name="width" val="4"/>
     </comp>
+    <comp lib="3" loc="(2710,1160)" name="Adder">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="3" loc="(3050,1380)" name="Adder"/>
     <comp lib="4" loc="(2050,1350)" name="ROM">
       <a name="addrWidth" val="15"/>
       <a name="appearance" val="logisim_evolution"/>
@@ -638,1119 +618,880 @@
       <a name="addrWidth" val="15"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 15 8
-20 48 2 13*0 20 48 2 20
-48 1 10*0 20 48 2 20 48
-20 4c 1 8*0 20 48 2 20
-48 20 4c 20 4c 1 6*0 20
-48 2 20 48 20 4c 10 8*0
-20 48 2 20 48 20 4c 20
-4c 10 6*0 20 48 2 20 48
-0 1 9*0 20 48 2 20 48
-20 4c 0 1 7*0 20 48 2
-20 48 0 1 9*0 20 48 2
-20 48 20 4c 0 1 7*0 20
-48 2 20 48 0 4 9*0 20
-48 2 13*0 20 48 2 20 48
-0 4 9*0 20 48 2 13*0 20
-48 2 20 48 0 4 9*0 20
-48 2 13*0 20 48 2 20 48
-0 4 9*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 20 48 10 10*0 20 48
-2 0 20 48 1 9*0 20 48
-2 20 48 10 20 48 10 20
-48 0 4 0 0 0 20 48
-2 0 20 48 0 20 48 7*0
-20 48 2 80 12*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-20 48 1 10*0 20 48 2 20
-48 20 4c 1 8*0 20 48 2
-20 48 20 4c 20 4c 1 6*0
-20 48 2 20 48 20 4c 10
-8*0 20 48 2 20 48 20 4c
-20 4c 10 6*0 20 48 2 20
-48 0 1 9*0 20 48 2 20
-48 20 4c 0 1 7*0 20 48
-2 20 48 0 1 9*0 20 48
-2 20 48 20 4c 0 1 7*0
-20 48 2 20 48 0 4 9*0
-20 48 2 20 48 0 4 9*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 20 48 0 4 9*0
-20 48 2 13*0 20 48 2 20
-48 0 4 9*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 20 48 10 10*0 20
-48 2 0 20 48 1 9*0 20
-48 2 20 48 10 20 48 10
-20 48 0 4 0 0 0 20
-48 2 0 20 48 0 20 48
-7*0 20 48 2 80 12*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 20 48 1 10*0 20 48 2
-20 48 20 4c 1 8*0 20 48
-2 20 48 20 4c 20 4c 1
-6*0 20 48 2 20 48 20 4c
-10 8*0 20 48 2 20 48 20
-4c 20 4c 10 6*0 20 48 2
-20 48 0 1 9*0 20 48 2
-20 48 20 4c 0 1 7*0 20
-48 2 20 48 0 1 9*0 20
-48 2 20 48 20 4c 0 1
-7*0 20 48 2 20 48 0 4
-9*0 20 48 2 13*0 20 48 2
-20 48 0 4 9*0 20 48 2
-20 48 0 4 9*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-20 48 0 4 9*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 20 48 10 10*0
-20 48 2 0 20 48 1 9*0
-20 48 2 20 48 10 20 48
-10 20 48 0 4 0 0 0
-20 48 2 0 20 48 0 20
-48 7*0 20 48 2 80 12*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 20 48 1 10*0 20 48
-2 20 48 20 4c 1 8*0 20
-48 2 20 48 20 4c 20 4c
-1 6*0 20 48 2 20 48 20
-4c 10 8*0 20 48 2 20 48
-20 4c 20 4c 10 6*0 20 48
-2 20 48 0 1 9*0 20 48
-2 20 48 20 4c 0 1 7*0
-20 48 2 20 48 0 1 9*0
-20 48 2 20 48 20 4c 0
-1 7*0 20 48 2 20 48 0
-4 9*0 20 48 2 20 48 0
-4 9*0 20 48 2 13*0 20 48
-2 20 48 0 4 9*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 20 48 0 4 9*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 20 48 10
-10*0 20 48 2 0 20 48 1
-9*0 20 48 2 20 48 10 20
-48 10 20 48 0 4 0 0
-0 20 48 2 0 20 48 0
-20 48 7*0 20 48 2 80 12*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 20 48 1 10*0 20
-48 2 20 48 20 4c 1 8*0
-20 48 2 20 48 20 4c 20
-4c 1 6*0 20 48 2 20 48
-20 4c 10 8*0 20 48 2 20
-48 20 4c 20 4c 10 6*0 20
-48 2 20 48 0 1 9*0 20
-48 2 20 48 20 4c 0 1
-7*0 20 48 2 20 48 0 1
-9*0 20 48 2 20 48 20 4c
-0 1 7*0 20 48 2 20 48
-0 4 9*0 20 48 2 13*0 20
-48 2 20 48 0 4 9*0 20
-48 2 13*0 20 48 2 20 48
-0 4 9*0 20 48 2 20 48
-0 4 9*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 20 48
-10 10*0 20 48 2 0 20 48
-1 9*0 20 48 2 20 48 10
-20 48 10 20 48 0 4 0
-0 0 20 48 2 0 20 48
-0 20 48 7*0 20 48 2 80
-12*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 20 48 1 10*0
-20 48 2 20 48 20 4c 1
-8*0 20 48 2 20 48 20 4c
-20 4c 1 6*0 20 48 2 20
-48 20 4c 10 8*0 20 48 2
-20 48 20 4c 20 4c 10 6*0
-20 48 2 20 48 0 1 9*0
-20 48 2 20 48 20 4c 0
-1 7*0 20 48 2 20 48 0
-1 9*0 20 48 2 20 48 20
-4c 0 1 7*0 20 48 2 20
-48 0 4 9*0 20 48 2 20
-48 0 4 9*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 20
-48 0 4 9*0 20 48 2 20
-48 0 4 9*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 20
-48 10 10*0 20 48 2 0 20
-48 1 9*0 20 48 2 20 48
-10 20 48 10 20 48 0 4
-0 0 0 20 48 2 0 20
-48 0 20 48 7*0 20 48 2
-80 12*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 20 48 1
-10*0 20 48 2 20 48 20 4c
-1 8*0 20 48 2 20 48 20
-4c 20 4c 1 6*0 20 48 2
-20 48 20 4c 10 8*0 20 48
-2 20 48 20 4c 20 4c 10
-6*0 20 48 2 20 48 0 1
-9*0 20 48 2 20 48 20 4c
-0 1 7*0 20 48 2 20 48
-0 1 9*0 20 48 2 20 48
-20 4c 0 1 7*0 20 48 2
-20 48 0 4 9*0 20 48 2
-13*0 20 48 2 20 48 0 4
-9*0 20 48 2 20 48 0 4
-9*0 20 48 2 13*0 20 48 2
-20 48 0 4 9*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-13*0 20 48 2 13*0 20 48 2
-20 48 10 10*0 20 48 2 0
-20 48 1 9*0 20 48 2 20
-48 10 20 48 10 20 48 0
-4 0 0 0 20 48 2 0
-20 48 0 20 48 7*0 20 48
-2 80 12*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 13*0 20
-48 2 13*0 20 48 2 20 48
-1 10*0 20 48 2 20 48 20
-4c 1 8*0 20 48 2 20 48
-20 4c 20 4c 1 6*0 20 48
-2 20 48 20 4c 10 8*0 20
-48 2 20 48 20 4c 20 4c
-10 6*0 20 48 2 20 48 0
-1 9*0 20 48 2 20 48 20
-4c 0 1 7*0 20 48 2 20
-48 0 1 9*0 20 48 2 20
-48 20 4c 0 1 7*0 20 48
-2 20 48 0 4 9*0 20 48
-2 20 48 0 4 9*0 20 48
-2 13*0 20 48 2 20 48 0
-4 9*0 20 48 2 13*0 20 48
-2 20 48 0 4 9*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 13*0 20 48 2 13*0 20 48
-2 20 48 10 10*0 20 48 2
-0 20 48 1 9*0 20 48 2
-20 48 10 20 48 10 20 48
-0 4 0 0 0 20 48 2
-0 20 48 0 20 48 7*0 20
-48 2 80 12*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2 13*0
-20 48 2 13*0 20 48 2
+0 20 c0 14*0 20 40 0 20
+c0 11*0 20 40 0 20 40 70
+80 9*0 20 40 0 20 40 70
+0 30 80 7*0 20 40 0 20
+40 70 80 9*0 20 40 0 20
+40 70 0 30 80 7*0 20 40
+0 20 40 84 10*0 20 40 0
+20 40 70 0 84 8*0 20 40
+0 20 40 8c 10*0 20 40 0
+20 40 70 0 8c 8*0 20 40
+0 20 40 50 80 9*0 20 40
+40 c0 12*0 20 40 0 20 40
+50 80 9*0 20 40 40 c0 12*0
+20 40 0 20 40 50 80 9*0
+20 40 40 c0 12*0 20 40 0
+20 40 50 80 9*0 20 40 81
+13*0 20 40 83 13*0 20 40 82
+13*0 20 40 0 20 83 11*0 20
+40 2 0 20 80 10*0 20 40
+0 20 3 0 20 3 0 20
+40 50 80 0 0 0 20 40
+2 0 20 2 0 20 0 40
+c0 5*0 20 40 80 13*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 40
+0 20 c0 11*0 20 40 0 20
+40 70 80 9*0 20 40 0 20
+40 70 0 30 80 7*0 20 40
+0 20 40 70 80 9*0 20 40
+0 20 40 70 0 30 80 7*0
+20 40 0 20 40 84 10*0 20
+40 0 20 40 70 0 84 8*0
+20 40 0 20 40 8c 10*0 20
+40 0 20 40 70 0 8c 8*0
+20 40 0 20 40 50 80 9*0
+20 40 0 20 40 50 80 9*0
+20 40 40 c0 12*0 20 40 40
+c0 12*0 20 40 0 20 40 50
+80 9*0 20 40 40 c0 12*0 20
+40 0 20 40 50 80 9*0 20
+40 81 13*0 20 40 83 13*0 20
+40 82 13*0 20 40 0 20 83
+11*0 20 40 2 0 20 80 10*0
+20 40 0 20 3 0 20 3
+0 20 40 50 80 0 0 0
+20 40 2 0 20 2 0 20
+0 40 c0 5*0 20 40 80 13*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 40 0 20 c0 11*0 20 40
+0 20 40 70 80 9*0 20 40
+0 20 40 70 0 30 80 7*0
+20 40 0 20 40 70 80 9*0
+20 40 0 20 40 70 0 30
+80 7*0 20 40 0 20 40 84
+10*0 20 40 0 20 40 70 0
+84 8*0 20 40 0 20 40 8c
+10*0 20 40 0 20 40 70 0
+8c 8*0 20 40 0 20 40 50
+80 9*0 20 40 40 c0 12*0 20
+40 0 20 40 50 80 9*0 20
+40 0 20 40 50 80 9*0 20
+40 40 c0 12*0 20 40 40 c0
+12*0 20 40 0 20 40 50 80
+9*0 20 40 81 13*0 20 40 83
+13*0 20 40 82 13*0 20 40 0
+20 83 11*0 20 40 2 0 20
+80 10*0 20 40 0 20 3 0
+20 3 0 20 40 50 80 0
+0 0 20 40 2 0 20 2
+0 20 0 40 c0 5*0 20 40
+80 13*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 40 0 20 c0 11*0
+20 40 0 20 40 70 80 9*0
+20 40 0 20 40 70 0 30
+80 7*0 20 40 0 20 40 70
+80 9*0 20 40 0 20 40 70
+0 30 80 7*0 20 40 0 20
+40 84 10*0 20 40 0 20 40
+70 0 84 8*0 20 40 0 20
+40 8c 10*0 20 40 0 20 40
+70 0 8c 8*0 20 40 0 20
+40 50 80 9*0 20 40 0 20
+40 50 80 9*0 20 40 40 c0
+12*0 20 40 0 20 40 50 80
+9*0 20 40 40 c0 12*0 20 40
+40 c0 12*0 20 40 0 20 40
+50 80 9*0 20 40 81 13*0 20
+40 83 13*0 20 40 82 13*0 20
+40 0 20 83 11*0 20 40 2
+0 20 80 10*0 20 40 0 20
+3 0 20 3 0 20 40 50
+80 0 0 0 20 40 2 0
+20 2 0 20 0 40 c0 5*0
+20 40 80 13*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 40 0 20
+c0 11*0 20 40 0 20 40 70
+80 9*0 20 40 0 20 40 70
+0 30 80 7*0 20 40 0 20
+40 70 80 9*0 20 40 0 20
+40 70 0 30 80 7*0 20 40
+0 20 40 84 10*0 20 40 0
+20 40 70 0 84 8*0 20 40
+0 20 40 8c 10*0 20 40 0
+20 40 70 0 8c 8*0 20 40
+0 20 40 50 80 9*0 20 40
+40 c0 12*0 20 40 0 20 40
+50 80 9*0 20 40 40 c0 12*0
+20 40 0 20 40 50 80 9*0
+20 40 0 20 40 50 80 9*0
+20 40 40 c0 12*0 20 40 81
+13*0 20 40 83 13*0 20 40 82
+13*0 20 40 0 20 83 11*0 20
+40 2 0 20 80 10*0 20 40
+0 20 3 0 20 3 0 20
+40 50 80 0 0 0 20 40
+2 0 20 2 0 20 0 40
+c0 5*0 20 40 80 13*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 40
+0 20 c0 11*0 20 40 0 20
+40 70 80 9*0 20 40 0 20
+40 70 0 30 80 7*0 20 40
+0 20 40 70 80 9*0 20 40
+0 20 40 70 0 30 80 7*0
+20 40 0 20 40 84 10*0 20
+40 0 20 40 70 0 84 8*0
+20 40 0 20 40 8c 10*0 20
+40 0 20 40 70 0 8c 8*0
+20 40 0 20 40 50 80 9*0
+20 40 0 20 40 50 80 9*0
+20 40 40 c0 12*0 20 40 40
+c0 12*0 20 40 0 20 40 50
+80 9*0 20 40 0 20 40 50
+80 9*0 20 40 40 c0 12*0 20
+40 81 13*0 20 40 83 13*0 20
+40 82 13*0 20 40 0 20 83
+11*0 20 40 2 0 20 80 10*0
+20 40 0 20 3 0 20 3
+0 20 40 50 80 0 0 0
+20 40 2 0 20 2 0 20
+0 40 c0 5*0 20 40 80 13*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 40 0 20 c0 11*0 20 40
+0 20 40 70 80 9*0 20 40
+0 20 40 70 0 30 80 7*0
+20 40 0 20 40 70 80 9*0
+20 40 0 20 40 70 0 30
+80 7*0 20 40 0 20 40 84
+10*0 20 40 0 20 40 70 0
+84 8*0 20 40 0 20 40 8c
+10*0 20 40 0 20 40 70 0
+8c 8*0 20 40 0 20 40 50
+80 9*0 20 40 40 c0 12*0 20
+40 0 20 40 50 80 9*0 20
+40 0 20 40 50 80 9*0 20
+40 40 c0 12*0 20 40 0 20
+40 50 80 9*0 20 40 40 c0
+12*0 20 40 81 13*0 20 40 83
+13*0 20 40 82 13*0 20 40 0
+20 83 11*0 20 40 2 0 20
+80 10*0 20 40 0 20 3 0
+20 3 0 20 40 50 80 0
+0 0 20 40 2 0 20 2
+0 20 0 40 c0 5*0 20 40
+80 13*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 40 0 20 c0 11*0
+20 40 0 20 40 70 80 9*0
+20 40 0 20 40 70 0 30
+80 7*0 20 40 0 20 40 70
+80 9*0 20 40 0 20 40 70
+0 30 80 7*0 20 40 0 20
+40 84 10*0 20 40 0 20 40
+70 0 84 8*0 20 40 0 20
+40 8c 10*0 20 40 0 20 40
+70 0 8c 8*0 20 40 0 20
+40 50 80 9*0 20 40 0 20
+40 50 80 9*0 20 40 40 c0
+12*0 20 40 0 20 40 50 80
+9*0 20 40 40 c0 12*0 20 40
+0 20 40 50 80 9*0 20 40
+40 c0 12*0 20 40 81 13*0 20
+40 83 13*0 20 40 82 13*0 20
+40 0 20 83 11*0 20 40 2
+0 20 80 10*0 20 40 0 20
+3 0 20 3 0 20 40 50
+80 0 0 0 20 40 2 0
+20 2 0 20 0 40 c0 5*0
+20 40 80 13*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
+14*0 20 c0 14*0 20 c0 14*0 20
+c0 14*0 20 c0 14*0 20 c0 14*0
+20 c0 14*0 20 c0 14*0 20 c0
 </a>
       <a name="label" val="microcode_a"/>
       <a name="labelvisible" val="true"/>
@@ -1759,1777 +1500,1156 @@
       <a name="addrWidth" val="15"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 15 8
-0 0 10 15*0 10 0 0 10
-12*0 10 0 0 10 10 11*0 10
-0 0 10 10 11*0 10 0 0
-10 10 11*0 10 0 0 10 10
-11*0 10 0 0 90 20 11*0 10
-0 0 10 10 80 20 9*0 10
-0 0 90 60 11*0 10 0 0
-10 10 80 60 9*0 10 0 0
-90 18 4 10*0 10 10 10 13*0
-10 0 0 90 18 4 10*0 10
-10 10 13*0 10 0 0 90 18
-4 10*0 10 10 10 13*0 10 0
-0 90 18 4 10*0 10 1 14*0
-10 3 14*0 10 2 14*0 10 0
-0 3 12*0 10 2 14*0 10 0
-0 3 0 0 3 0 0 90
-18 4 4*0 10 2 0 0 6
-0 0 8 10 10 6*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 0 0 10 12*0 10 0 0
-10 10 11*0 10 0 0 10 10
-11*0 10 0 0 10 10 11*0 10
-0 0 10 10 11*0 10 0 0
-90 20 11*0 10 0 0 10 10
-80 20 9*0 10 0 0 90 60
-11*0 10 0 0 10 10 80 60
-9*0 10 0 0 90 18 4 10*0
-10 0 0 90 18 4 10*0 10
-10 10 13*0 10 10 10 13*0 10
-0 0 90 18 4 10*0 10 10
-10 13*0 10 0 0 90 18 4
-10*0 10 1 14*0 10 3 14*0 10
-2 14*0 10 0 0 3 12*0 10
-2 14*0 10 0 0 3 0 0
-3 0 0 90 18 4 4*0 10
-2 0 0 6 0 0 8 10
-10 6*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 0 0 10
-12*0 10 0 0 10 10 11*0 10
-0 0 10 10 11*0 10 0 0
-10 10 11*0 10 0 0 10 10
-11*0 10 0 0 90 20 11*0 10
-0 0 10 10 80 20 9*0 10
-0 0 90 60 11*0 10 0 0
-10 10 80 60 9*0 10 0 0
-90 18 4 10*0 10 10 10 13*0
-10 0 0 90 18 4 10*0 10
-0 0 90 18 4 10*0 10 10
-10 13*0 10 10 10 13*0 10 0
-0 90 18 4 10*0 10 1 14*0
-10 3 14*0 10 2 14*0 10 0
-0 3 12*0 10 2 14*0 10 0
-0 3 0 0 3 0 0 90
-18 4 4*0 10 2 0 0 6
-0 0 8 10 10 6*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 0 0 10 12*0 10 0 0
-10 10 11*0 10 0 0 10 10
-11*0 10 0 0 10 10 11*0 10
-0 0 10 10 11*0 10 0 0
-90 20 11*0 10 0 0 10 10
-80 20 9*0 10 0 0 90 60
-11*0 10 0 0 10 10 80 60
-9*0 10 0 0 90 18 4 10*0
-10 0 0 90 18 4 10*0 10
-10 10 13*0 10 0 0 90 18
-4 10*0 10 10 10 13*0 10 10
-10 13*0 10 0 0 90 18 4
-10*0 10 1 14*0 10 3 14*0 10
-2 14*0 10 0 0 3 12*0 10
-2 14*0 10 0 0 3 0 0
-3 0 0 90 18 4 4*0 10
-2 0 0 6 0 0 8 10
-10 6*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 0 0 10
-12*0 10 0 0 10 10 11*0 10
-0 0 10 10 11*0 10 0 0
-10 10 11*0 10 0 0 10 10
-11*0 10 0 0 90 20 11*0 10
-0 0 10 10 80 20 9*0 10
-0 0 90 60 11*0 10 0 0
-10 10 80 60 9*0 10 0 0
-90 18 4 10*0 10 10 10 13*0
-10 0 0 90 18 4 10*0 10
-10 10 13*0 10 0 0 90 18
-4 10*0 10 0 0 90 18 4
-10*0 10 10 10 13*0 10 1 14*0
-10 3 14*0 10 2 14*0 10 0
-0 3 12*0 10 2 14*0 10 0
-0 3 0 0 3 0 0 90
-18 4 4*0 10 2 0 0 6
-0 0 8 10 10 6*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 0 0 10 12*0 10 0 0
-10 10 11*0 10 0 0 10 10
-11*0 10 0 0 10 10 11*0 10
-0 0 10 10 11*0 10 0 0
-90 20 11*0 10 0 0 10 10
-80 20 9*0 10 0 0 90 60
-11*0 10 0 0 10 10 80 60
-9*0 10 0 0 90 18 4 10*0
-10 0 0 90 18 4 10*0 10
-10 10 13*0 10 10 10 13*0 10
-0 0 90 18 4 10*0 10 0
-0 90 18 4 10*0 10 10 10
-13*0 10 1 14*0 10 3 14*0 10
-2 14*0 10 0 0 3 12*0 10
-2 14*0 10 0 0 3 0 0
-3 0 0 90 18 4 4*0 10
-2 0 0 6 0 0 8 10
-10 6*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 0 0 10
-12*0 10 0 0 10 10 11*0 10
-0 0 10 10 11*0 10 0 0
-10 10 11*0 10 0 0 10 10
-11*0 10 0 0 90 20 11*0 10
-0 0 10 10 80 20 9*0 10
-0 0 90 60 11*0 10 0 0
-10 10 80 60 9*0 10 0 0
-90 18 4 10*0 10 10 10 13*0
-10 0 0 90 18 4 10*0 10
-0 0 90 18 4 10*0 10 10
-10 13*0 10 0 0 90 18 4
-10*0 10 10 10 13*0 10 1 14*0
-10 3 14*0 10 2 14*0 10 0
-0 3 12*0 10 2 14*0 10 0
-0 3 0 0 3 0 0 90
-18 4 4*0 10 2 0 0 6
-0 0 8 10 10 6*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 0 0 10 12*0 10 0 0
-10 10 11*0 10 0 0 10 10
-11*0 10 0 0 10 10 11*0 10
-0 0 10 10 11*0 10 0 0
-90 20 11*0 10 0 0 10 10
-80 20 9*0 10 0 0 90 60
-11*0 10 0 0 10 10 80 60
-9*0 10 0 0 90 18 4 10*0
-10 0 0 90 18 4 10*0 10
-10 10 13*0 10 0 0 90 18
-4 10*0 10 10 10 13*0 10 0
-0 90 18 4 10*0 10 10 10
-13*0 10 1 14*0 10 3 14*0 10
-2 14*0 10 0 0 3 12*0 10
-2 14*0 10 0 0 3 0 0
-3 0 0 90 18 4 4*0 10
-2 0 0 6 0 0 8 10
-10 6*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10 15*0 10 15*0 10 15*0 10 15*0
-10
+86 75 41 13*0 86 75 41 86
+75 21 10*0 86 75 41 86 75
+81 71 21 8*0 86 75 41 86
+75 81 71 81 71 21 6*0 86
+75 41 86 75 81 71 12 8*0
+86 75 41 86 75 81 71 81
+71 12 6*0 86 75 41 86 75
+31 24 9*0 86 75 41 86 75
+81 71 31 24 7*0 86 75 41
+86 75 31 24 9*0 86 75 41
+86 75 81 71 31 24 7*0 86
+75 41 86 75 31 51 63 8*0
+86 75 41 13*0 86 75 41 86
+75 31 51 63 8*0 86 75 41
+13*0 86 75 41 86 75 31 51
+63 8*0 86 75 41 13*0 86 75
+41 86 75 31 51 63 8*0 86
+75 41 13*0 86 75 41 13*0 86
+75 41 13*0 86 75 41 88 77
+12 10*0 86 75 41 0 88 77
+21 9*0 86 75 41 88 77 15
+88 77 16 86 75 31 51 63
+0 0 86 75 41 0 88 77
+61 88 77 51 6*0 86 75 41
+f 12*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 86 75 21
+10*0 86 75 41 86 75 81 71
+21 8*0 86 75 41 86 75 81
+71 81 71 21 6*0 86 75 41
+86 75 81 71 12 8*0 86 75
+41 86 75 81 71 81 71 12
+6*0 86 75 41 86 75 31 24
+9*0 86 75 41 86 75 81 71
+31 24 7*0 86 75 41 86 75
+31 24 9*0 86 75 41 86 75
+81 71 31 24 7*0 86 75 41
+86 75 31 51 63 8*0 86 75
+41 86 75 31 51 63 8*0 86
+75 41 13*0 86 75 41 13*0 86
+75 41 86 75 31 51 63 8*0
+86 75 41 13*0 86 75 41 86
+75 31 51 63 8*0 86 75 41
+13*0 86 75 41 13*0 86 75 41
+13*0 86 75 41 88 77 12 10*0
+86 75 41 0 88 77 21 9*0
+86 75 41 88 77 15 88 77
+16 86 75 31 51 63 0 0
+86 75 41 0 88 77 61 88
+77 51 6*0 86 75 41 f 12*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 86 75 21 10*0 86
+75 41 86 75 81 71 21 8*0
+86 75 41 86 75 81 71 81
+71 21 6*0 86 75 41 86 75
+81 71 12 8*0 86 75 41 86
+75 81 71 81 71 12 6*0 86
+75 41 86 75 31 24 9*0 86
+75 41 86 75 81 71 31 24
+7*0 86 75 41 86 75 31 24
+9*0 86 75 41 86 75 81 71
+31 24 7*0 86 75 41 86 75
+31 51 63 8*0 86 75 41 13*0
+86 75 41 86 75 31 51 63
+8*0 86 75 41 86 75 31 51
+63 8*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 86 75 31
+51 63 8*0 86 75 41 13*0 86
+75 41 13*0 86 75 41 13*0 86
+75 41 88 77 12 10*0 86 75
+41 0 88 77 21 9*0 86 75
+41 88 77 15 88 77 16 86
+75 31 51 63 0 0 86 75
+41 0 88 77 61 88 77 51
+6*0 86 75 41 f 12*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 86 75 21 10*0 86 75 41
+86 75 81 71 21 8*0 86 75
+41 86 75 81 71 81 71 21
+6*0 86 75 41 86 75 81 71
+12 8*0 86 75 41 86 75 81
+71 81 71 12 6*0 86 75 41
+86 75 31 24 9*0 86 75 41
+86 75 81 71 31 24 7*0 86
+75 41 86 75 31 24 9*0 86
+75 41 86 75 81 71 31 24
+7*0 86 75 41 86 75 31 51
+63 8*0 86 75 41 86 75 31
+51 63 8*0 86 75 41 13*0 86
+75 41 86 75 31 51 63 8*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 86 75 31 51 63
+8*0 86 75 41 13*0 86 75 41
+13*0 86 75 41 13*0 86 75 41
+88 77 12 10*0 86 75 41 0
+88 77 21 9*0 86 75 41 88
+77 15 88 77 16 86 75 31
+51 63 0 0 86 75 41 0
+88 77 61 88 77 51 6*0 86
+75 41 f 12*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 86
+75 21 10*0 86 75 41 86 75
+81 71 21 8*0 86 75 41 86
+75 81 71 81 71 21 6*0 86
+75 41 86 75 81 71 12 8*0
+86 75 41 86 75 81 71 81
+71 12 6*0 86 75 41 86 75
+31 24 9*0 86 75 41 86 75
+81 71 31 24 7*0 86 75 41
+86 75 31 24 9*0 86 75 41
+86 75 81 71 31 24 7*0 86
+75 41 86 75 31 51 63 8*0
+86 75 41 13*0 86 75 41 86
+75 31 51 63 8*0 86 75 41
+13*0 86 75 41 86 75 31 51
+63 8*0 86 75 41 86 75 31
+51 63 8*0 86 75 41 13*0 86
+75 41 13*0 86 75 41 13*0 86
+75 41 13*0 86 75 41 88 77
+12 10*0 86 75 41 0 88 77
+21 9*0 86 75 41 88 77 15
+88 77 16 86 75 31 51 63
+0 0 86 75 41 0 88 77
+61 88 77 51 6*0 86 75 41
+f 12*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 86 75 21
+10*0 86 75 41 86 75 81 71
+21 8*0 86 75 41 86 75 81
+71 81 71 21 6*0 86 75 41
+86 75 81 71 12 8*0 86 75
+41 86 75 81 71 81 71 12
+6*0 86 75 41 86 75 31 24
+9*0 86 75 41 86 75 81 71
+31 24 7*0 86 75 41 86 75
+31 24 9*0 86 75 41 86 75
+81 71 31 24 7*0 86 75 41
+86 75 31 51 63 8*0 86 75
+41 86 75 31 51 63 8*0 86
+75 41 13*0 86 75 41 13*0 86
+75 41 86 75 31 51 63 8*0
+86 75 41 86 75 31 51 63
+8*0 86 75 41 13*0 86 75 41
+13*0 86 75 41 13*0 86 75 41
+13*0 86 75 41 88 77 12 10*0
+86 75 41 0 88 77 21 9*0
+86 75 41 88 77 15 88 77
+16 86 75 31 51 63 0 0
+86 75 41 0 88 77 61 88
+77 51 6*0 86 75 41 f 12*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 86 75 21 10*0 86
+75 41 86 75 81 71 21 8*0
+86 75 41 86 75 81 71 81
+71 21 6*0 86 75 41 86 75
+81 71 12 8*0 86 75 41 86
+75 81 71 81 71 12 6*0 86
+75 41 86 75 31 24 9*0 86
+75 41 86 75 81 71 31 24
+7*0 86 75 41 86 75 31 24
+9*0 86 75 41 86 75 81 71
+31 24 7*0 86 75 41 86 75
+31 51 63 8*0 86 75 41 13*0
+86 75 41 86 75 31 51 63
+8*0 86 75 41 86 75 31 51
+63 8*0 86 75 41 13*0 86 75
+41 86 75 31 51 63 8*0 86
+75 41 13*0 86 75 41 13*0 86
+75 41 13*0 86 75 41 13*0 86
+75 41 88 77 12 10*0 86 75
+41 0 88 77 21 9*0 86 75
+41 88 77 15 88 77 16 86
+75 31 51 63 0 0 86 75
+41 0 88 77 61 88 77 51
+6*0 86 75 41 f 12*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 13*0 86 75 41 13*0 86 75
+41 86 75 21 10*0 86 75 41
+86 75 81 71 21 8*0 86 75
+41 86 75 81 71 81 71 21
+6*0 86 75 41 86 75 81 71
+12 8*0 86 75 41 86 75 81
+71 81 71 12 6*0 86 75 41
+86 75 31 24 9*0 86 75 41
+86 75 81 71 31 24 7*0 86
+75 41 86 75 31 24 9*0 86
+75 41 86 75 81 71 31 24
+7*0 86 75 41 86 75 31 51
+63 8*0 86 75 41 86 75 31
+51 63 8*0 86 75 41 13*0 86
+75 41 86 75 31 51 63 8*0
+86 75 41 13*0 86 75 41 86
+75 31 51 63 8*0 86 75 41
+13*0 86 75 41 13*0 86 75 41
+13*0 86 75 41 13*0 86 75 41
+88 77 12 10*0 86 75 41 0
+88 77 21 9*0 86 75 41 88
+77 15 88 77 16 86 75 31
+51 63 0 0 86 75 41 0
+88 77 61 88 77 51 6*0 86
+75 41 f 12*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41 13*0
+86 75 41 13*0 86 75 41
 </a>
       <a name="label" val="microcode_b"/>
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp lib="4" loc="(2880,1150)" name="Register">
+    <comp lib="4" loc="(2790,1150)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="A_REG"/>
     </comp>
-    <comp lib="4" loc="(2880,1540)" name="Register">
+    <comp lib="4" loc="(2790,1540)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="B_REG"/>
     </comp>
-    <comp lib="4" loc="(3000,1810)" name="ROM">
-      <a name="addrWidth" val="15"/>
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="contents">addr/data: 15 8
-6 5 11 13*0 6 5 1 6
-5 11 10*0 6 5 1 6 5
-1 1 11 8*0 6 5 1 6
-5 4*1 11 6*0 6 5 1 6
-5 1 1 12 8*0 6 5 1
-6 5 4*1 12 6*0 6 5 1
-6 5 1 14 9*0 6 5 1
-6 5 1 1 1 14 7*0 6
-5 1 6 5 1 14 9*0 6
-5 1 6 5 1 1 1 14
-7*0 6 5 1 6 5 1 1
-13 8*0 6 5 1 0 10 11*0
-6 5 1 6 5 1 1 13
-8*0 6 5 1 0 10 11*0 6
-5 1 6 5 1 1 13 8*0
-6 5 1 0 10 11*0 6 5
-1 6 5 1 1 13 8*0 6
-5 1 10 12*0 6 5 1 10
-12*0 6 5 1 10 12*0 6 5
-1 8 7 12 10*0 6 5 1
-0 8 7 11 9*0 6 5 1
-8 7 5 8 7 6 6 5
-1 1 13 0 0 6 5 1
-0 8 7 1 8 7 1 0
-10 4*0 6 5 1 10 12*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 1 6 5 11 10*0 6 5
-1 6 5 1 1 11 8*0 6
-5 1 6 5 4*1 11 6*0 6
-5 1 6 5 1 1 12 8*0
-6 5 1 6 5 4*1 12 6*0
-6 5 1 6 5 1 14 9*0
-6 5 1 6 5 1 1 1
-14 7*0 6 5 1 6 5 1
-14 9*0 6 5 1 6 5 1
-1 1 14 7*0 6 5 1 6
-5 1 1 13 8*0 6 5 1
-6 5 1 1 13 8*0 6 5
-1 0 10 11*0 6 5 1 0
-10 11*0 6 5 1 6 5 1
-1 13 8*0 6 5 1 0 10
-11*0 6 5 1 6 5 1 1
-13 8*0 6 5 1 10 12*0 6
-5 1 10 12*0 6 5 1 10
-12*0 6 5 1 8 7 12 10*0
-6 5 1 0 8 7 11 9*0
-6 5 1 8 7 5 8 7
-6 6 5 1 1 13 0 0
-6 5 1 0 8 7 1 8
-7 1 0 10 4*0 6 5 1
-10 12*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 1 6 5 11
-10*0 6 5 1 6 5 1 1
-11 8*0 6 5 1 6 5 4*1
-11 6*0 6 5 1 6 5 1
-1 12 8*0 6 5 1 6 5
-4*1 12 6*0 6 5 1 6 5
-1 14 9*0 6 5 1 6 5
-1 1 1 14 7*0 6 5 1
-6 5 1 14 9*0 6 5 1
-6 5 1 1 1 14 7*0 6
-5 1 6 5 1 1 13 8*0
-6 5 1 0 10 11*0 6 5
-1 6 5 1 1 13 8*0 6
-5 1 6 5 1 1 13 8*0
-6 5 1 0 10 11*0 6 5
-1 0 10 11*0 6 5 1 6
-5 1 1 13 8*0 6 5 1
-10 12*0 6 5 1 10 12*0 6
-5 1 10 12*0 6 5 1 8
-7 12 10*0 6 5 1 0 8
-7 11 9*0 6 5 1 8 7
-5 8 7 6 6 5 1 1
-13 0 0 6 5 1 0 8
-7 1 8 7 1 0 10 4*0
-6 5 1 10 12*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 1
-6 5 11 10*0 6 5 1 6
-5 1 1 11 8*0 6 5 1
-6 5 4*1 11 6*0 6 5 1
-6 5 1 1 12 8*0 6 5
-1 6 5 4*1 12 6*0 6 5
-1 6 5 1 14 9*0 6 5
-1 6 5 1 1 1 14 7*0
-6 5 1 6 5 1 14 9*0
-6 5 1 6 5 1 1 1
-14 7*0 6 5 1 6 5 1
-1 13 8*0 6 5 1 6 5
-1 1 13 8*0 6 5 1 0
-10 11*0 6 5 1 6 5 1
-1 13 8*0 6 5 1 0 10
-11*0 6 5 1 0 10 11*0 6
-5 1 6 5 1 1 13 8*0
-6 5 1 10 12*0 6 5 1
-10 12*0 6 5 1 10 12*0 6
-5 1 8 7 12 10*0 6 5
-1 0 8 7 11 9*0 6 5
-1 8 7 5 8 7 6 6
-5 1 1 13 0 0 6 5
-1 0 8 7 1 8 7 1
-0 10 4*0 6 5 1 10 12*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 1 6 5 11 10*0 6
-5 1 6 5 1 1 11 8*0
-6 5 1 6 5 4*1 11 6*0
-6 5 1 6 5 1 1 12
-8*0 6 5 1 6 5 4*1 12
-6*0 6 5 1 6 5 1 14
-9*0 6 5 1 6 5 1 1
-1 14 7*0 6 5 1 6 5
-1 14 9*0 6 5 1 6 5
-1 1 1 14 7*0 6 5 1
-6 5 1 1 13 8*0 6 5
-1 0 10 11*0 6 5 1 6
-5 1 1 13 8*0 6 5 1
-0 10 11*0 6 5 1 6 5
-1 1 13 8*0 6 5 1 6
-5 1 1 13 8*0 6 5 1
-0 10 11*0 6 5 1 10 12*0
-6 5 1 10 12*0 6 5 1
-10 12*0 6 5 1 8 7 12
-10*0 6 5 1 0 8 7 11
-9*0 6 5 1 8 7 5 8
-7 6 6 5 1 1 13 0
-0 6 5 1 0 8 7 1
-8 7 1 0 10 4*0 6 5
-1 10 12*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 11 13*0 6
-5 11 13*0 6 5 1 6 5
-11 10*0 6 5 1 6 5 1
-1 11 8*0 6 5 1 6 5
-4*1 11 6*0 6 5 1 6 5
-1 1 12 8*0 6 5 1 6
-5 4*1 12 6*0 6 5 1 6
-5 1 14 9*0 6 5 1 6
-5 1 1 1 14 7*0 6 5
-1 6 5 1 14 9*0 6 5
-1 6 5 1 1 1 14 7*0
-6 5 1 6 5 1 1 13
-8*0 6 5 1 6 5 1 1
-13 8*0 6 5 1 0 10 11*0
-6 5 1 0 10 11*0 6 5
-1 6 5 1 1 13 8*0 6
-5 1 6 5 1 1 13 8*0
-6 5 1 0 10 11*0 6 5
-1 10 12*0 6 5 1 10 12*0
-6 5 1 10 12*0 6 5 1
-8 7 12 10*0 6 5 1 0
-8 7 11 9*0 6 5 1 8
-7 5 8 7 6 6 5 1
-1 13 0 0 6 5 1 0
-8 7 1 8 7 1 0 10
-4*0 6 5 1 10 12*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-11 13*0 6 5 11 13*0 6 5
-1 6 5 11 10*0 6 5 1
-6 5 1 1 11 8*0 6 5
-1 6 5 4*1 11 6*0 6 5
-1 6 5 1 1 12 8*0 6
-5 1 6 5 4*1 12 6*0 6
-5 1 6 5 1 14 9*0 6
-5 1 6 5 1 1 1 14
-7*0 6 5 1 6 5 1 14
-9*0 6 5 1 6 5 1 1
-1 14 7*0 6 5 1 6 5
-1 1 13 8*0 6 5 1 0
-10 11*0 6 5 1 6 5 1
-1 13 8*0 6 5 1 6 5
-1 1 13 8*0 6 5 1 0
-10 11*0 6 5 1 6 5 1
-1 13 8*0 6 5 1 0 10
-11*0 6 5 1 10 12*0 6 5
-1 10 12*0 6 5 1 10 12*0
-6 5 1 8 7 12 10*0 6
-5 1 0 8 7 11 9*0 6
-5 1 8 7 5 8 7 6
-6 5 1 1 13 0 0 6
-5 1 0 8 7 1 8 7
-1 0 10 4*0 6 5 1 10
-12*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 11 13*0 6 5 11
-13*0 6 5 1 6 5 11 10*0
-6 5 1 6 5 1 1 11
-8*0 6 5 1 6 5 4*1 11
-6*0 6 5 1 6 5 1 1
-12 8*0 6 5 1 6 5 4*1
-12 6*0 6 5 1 6 5 1
-14 9*0 6 5 1 6 5 1
-1 1 14 7*0 6 5 1 6
-5 1 14 9*0 6 5 1 6
-5 1 1 1 14 7*0 6 5
-1 6 5 1 1 13 8*0 6
-5 1 6 5 1 1 13 8*0
-6 5 1 0 10 11*0 6 5
-1 6 5 1 1 13 8*0 6
-5 1 0 10 11*0 6 5 1
-6 5 1 1 13 8*0 6 5
-1 0 10 11*0 6 5 1 10
-12*0 6 5 1 10 12*0 6 5
-1 10 12*0 6 5 1 8 7
-12 10*0 6 5 1 0 8 7
-11 9*0 6 5 1 8 7 5
-8 7 6 6 5 1 1 13
-0 0 6 5 1 0 8 7
-1 8 7 1 0 10 4*0 6
-5 1 10 12*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11 13*0
-6 5 11 13*0 6 5 11
-</a>
-      <a name="label" val="microcode_c"/>
-      <a name="labelvisible" val="true"/>
-    </comp>
-    <comp lib="4" loc="(3400,1320)" name="Register">
+    <comp lib="4" loc="(3270,1320)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="FLAG_REG"/>
       <a name="width" val="3"/>
     </comp>
-    <comp lib="5" loc="(2650,1750)" name="LedBar"/>
-    <comp lib="5" loc="(2970,2110)" name="LedBar">
-      <a name="matrixcols" val="24"/>
+    <comp lib="5" loc="(2660,1750)" name="LedBar"/>
+    <comp lib="5" loc="(2750,1750)" name="LedBar">
+      <a name="matrixcols" val="16"/>
     </comp>
-    <comp lib="5" loc="(3490,1330)" name="LedBar">
-      <a name="matrixcols" val="3"/>
-    </comp>
-    <comp lib="5" loc="(3620,2190)" name="Button">
-      <a name="facing" val="west"/>
-      <a name="press" val="passive"/>
-    </comp>
-    <comp lib="5" loc="(3620,2250)" name="DipSwitch">
-      <a name="facing" val="west"/>
+    <comp lib="5" loc="(2840,1020)" name="Button"/>
+    <comp lib="5" loc="(2860,1050)" name="DipSwitch">
+      <a name="facing" val="east"/>
       <a name="number" val="2"/>
     </comp>
-    <comp loc="(2340,1170)" name="mar"/>
-    <comp loc="(2340,760)" name="stack_pointer"/>
-    <comp loc="(2340,890)" name="program_counter"/>
+    <comp lib="5" loc="(3360,1330)" name="LedBar">
+      <a name="matrixcols" val="3"/>
+    </comp>
+    <comp loc="(2560,1170)" name="mar"/>
+    <comp loc="(2560,760)" name="stack_pointer"/>
+    <comp loc="(2560,890)" name="program_counter"/>
     <wire from="(2020,1250)" to="(2020,1270)"/>
     <wire from="(2020,1270)" to="(2020,1660)"/>
     <wire from="(2020,1270)" to="(2300,1270)"/>
@@ -3538,28 +2658,13 @@
     <wire from="(2040,1250)" to="(2040,1360)"/>
     <wire from="(2040,1250)" to="(2390,1250)"/>
     <wire from="(2040,1360)" to="(2050,1360)"/>
-    <wire from="(2040,1670)" to="(2680,1670)"/>
-    <wire from="(2050,1230)" to="(2500,1230)"/>
+    <wire from="(2050,1230)" to="(2720,1230)"/>
     <wire from="(2050,1820)" to="(2070,1820)"/>
     <wire from="(2070,1780)" to="(2070,1820)"/>
     <wire from="(2070,1780)" to="(2260,1780)"/>
     <wire from="(2070,1820)" to="(2070,1920)"/>
     <wire from="(2070,1920)" to="(2090,1920)"/>
-    <wire from="(2100,1070)" to="(2120,1070)"/>
-    <wire from="(2100,1090)" to="(2120,1090)"/>
-    <wire from="(2100,1110)" to="(2120,1110)"/>
-    <wire from="(2100,1130)" to="(2120,1130)"/>
-    <wire from="(2100,890)" to="(2120,890)"/>
-    <wire from="(2100,910)" to="(2120,910)"/>
-    <wire from="(2100,930)" to="(2120,930)"/>
-    <wire from="(2100,950)" to="(2120,950)"/>
-    <wire from="(2100,970)" to="(2120,970)"/>
-    <wire from="(2100,990)" to="(2120,990)"/>
     <wire from="(2110,1870)" to="(2150,1870)"/>
-    <wire from="(2110,760)" to="(2120,760)"/>
-    <wire from="(2110,780)" to="(2120,780)"/>
-    <wire from="(2110,800)" to="(2120,800)"/>
-    <wire from="(2110,820)" to="(2120,820)"/>
     <wire from="(2120,1920)" to="(2150,1920)"/>
     <wire from="(2140,1950)" to="(2150,1950)"/>
     <wire from="(2150,1920)" to="(2160,1920)"/>
@@ -3570,229 +2675,231 @@
     <wire from="(2290,1410)" to="(2300,1410)"/>
     <wire from="(2300,1410)" to="(2300,1620)"/>
     <wire from="(2300,1620)" to="(2660,1620)"/>
+    <wire from="(2320,1070)" to="(2340,1070)"/>
+    <wire from="(2320,1090)" to="(2340,1090)"/>
+    <wire from="(2320,1110)" to="(2340,1110)"/>
+    <wire from="(2320,1130)" to="(2340,1130)"/>
     <wire from="(2320,1740)" to="(2440,1740)"/>
-    <wire from="(2340,1070)" to="(2740,1070)"/>
-    <wire from="(2340,1170)" to="(2450,1170)"/>
-    <wire from="(2340,1950)" to="(2360,1950)"/>
-    <wire from="(2340,760)" to="(2740,760)"/>
-    <wire from="(2340,890)" to="(2370,890)"/>
-    <wire from="(2340,910)" to="(2370,910)"/>
+    <wire from="(2320,890)" to="(2340,890)"/>
+    <wire from="(2320,910)" to="(2340,910)"/>
+    <wire from="(2320,930)" to="(2340,930)"/>
+    <wire from="(2320,950)" to="(2340,950)"/>
+    <wire from="(2320,970)" to="(2340,970)"/>
+    <wire from="(2320,990)" to="(2340,990)"/>
+    <wire from="(2330,1320)" to="(2330,1440)"/>
+    <wire from="(2330,1320)" to="(2740,1320)"/>
+    <wire from="(2330,1440)" to="(2390,1440)"/>
+    <wire from="(2330,760)" to="(2340,760)"/>
+    <wire from="(2330,780)" to="(2340,780)"/>
+    <wire from="(2330,800)" to="(2340,800)"/>
+    <wire from="(2330,820)" to="(2340,820)"/>
+    <wire from="(2340,1950)" to="(2370,1950)"/>
     <wire from="(2350,1290)" to="(2370,1290)"/>
-    <wire from="(2350,1420)" to="(2390,1420)"/>
-    <wire from="(2360,1320)" to="(2360,1440)"/>
-    <wire from="(2360,1320)" to="(2740,1320)"/>
-    <wire from="(2360,1440)" to="(2390,1440)"/>
-    <wire from="(2360,1950)" to="(2360,2190)"/>
-    <wire from="(2360,1950)" to="(2410,1950)"/>
-    <wire from="(2360,2190)" to="(3250,2190)"/>
     <wire from="(2370,1290)" to="(2370,1400)"/>
     <wire from="(2370,1400)" to="(2390,1400)"/>
-    <wire from="(2370,890)" to="(2370,900)"/>
-    <wire from="(2370,900)" to="(2370,910)"/>
-    <wire from="(2370,900)" to="(2740,900)"/>
-    <wire from="(2390,1110)" to="(2470,1110)"/>
+    <wire from="(2370,1770)" to="(2370,1950)"/>
+    <wire from="(2370,1770)" to="(2440,1770)"/>
+    <wire from="(2370,1950)" to="(2370,1990)"/>
+    <wire from="(2370,1990)" to="(2380,1990)"/>
+    <wire from="(2370,2010)" to="(2380,2010)"/>
     <wire from="(2390,1250)" to="(2390,1360)"/>
-    <wire from="(2410,1150)" to="(2450,1150)"/>
-    <wire from="(2410,1770)" to="(2410,1950)"/>
-    <wire from="(2410,1770)" to="(2440,1770)"/>
     <wire from="(2420,1710)" to="(2440,1710)"/>
+    <wire from="(2420,2000)" to="(2440,2000)"/>
     <wire from="(2460,1780)" to="(2480,1780)"/>
-    <wire from="(2470,1110)" to="(2470,1140)"/>
     <wire from="(2480,1780)" to="(2480,1820)"/>
     <wire from="(2480,1780)" to="(2730,1780)"/>
-    <wire from="(2490,1160)" to="(2500,1160)"/>
-    <wire from="(2500,1160)" to="(2500,1230)"/>
-    <wire from="(2580,2200)" to="(2580,2220)"/>
+    <wire from="(2560,1070)" to="(2740,1070)"/>
+    <wire from="(2560,1170)" to="(2670,1170)"/>
+    <wire from="(2560,760)" to="(2740,760)"/>
+    <wire from="(2560,890)" to="(2590,890)"/>
+    <wire from="(2560,910)" to="(2590,910)"/>
+    <wire from="(2590,890)" to="(2590,900)"/>
+    <wire from="(2590,900)" to="(2590,910)"/>
+    <wire from="(2590,900)" to="(2740,900)"/>
+    <wire from="(2610,1110)" to="(2690,1110)"/>
+    <wire from="(2630,1150)" to="(2670,1150)"/>
     <wire from="(2630,1440)" to="(2650,1440)"/>
     <wire from="(2650,1440)" to="(2650,1640)"/>
     <wire from="(2650,1640)" to="(2660,1640)"/>
     <wire from="(2670,1650)" to="(2670,1660)"/>
-    <wire from="(2680,1650)" to="(2680,1670)"/>
+    <wire from="(2680,1650)" to="(2680,1660)"/>
+    <wire from="(2680,1660)" to="(2700,1660)"/>
+    <wire from="(2690,1110)" to="(2690,1140)"/>
     <wire from="(2690,1630)" to="(2740,1630)"/>
+    <wire from="(2710,1160)" to="(2720,1160)"/>
+    <wire from="(2720,1160)" to="(2720,1230)"/>
     <wire from="(2720,1870)" to="(2730,1870)"/>
-    <wire from="(2730,1770)" to="(2740,1770)"/>
     <wire from="(2730,1780)" to="(2730,1820)"/>
-    <wire from="(2730,1780)" to="(2990,1780)"/>
     <wire from="(2730,1820)" to="(2740,1820)"/>
     <wire from="(2730,1870)" to="(2730,2040)"/>
-    <wire from="(2730,2040)" to="(2910,2040)"/>
+    <wire from="(2730,2040)" to="(2990,2040)"/>
     <wire from="(2740,1070)" to="(2740,1180)"/>
     <wire from="(2740,1180)" to="(2740,1280)"/>
-    <wire from="(2740,1180)" to="(2880,1180)"/>
+    <wire from="(2740,1180)" to="(2790,1180)"/>
     <wire from="(2740,1280)" to="(2740,1320)"/>
-    <wire from="(2740,1280)" to="(2900,1280)"/>
+    <wire from="(2740,1280)" to="(2790,1280)"/>
     <wire from="(2740,1320)" to="(2740,1480)"/>
     <wire from="(2740,1480)" to="(2740,1570)"/>
-    <wire from="(2740,1480)" to="(2870,1480)"/>
+    <wire from="(2740,1480)" to="(2790,1480)"/>
     <wire from="(2740,1570)" to="(2740,1630)"/>
-    <wire from="(2740,1570)" to="(2880,1570)"/>
+    <wire from="(2740,1570)" to="(2790,1570)"/>
     <wire from="(2740,1630)" to="(2740,1680)"/>
     <wire from="(2740,1680)" to="(2740,1770)"/>
-    <wire from="(2740,1680)" to="(2890,1680)"/>
+    <wire from="(2740,1680)" to="(2800,1680)"/>
     <wire from="(2740,760)" to="(2740,900)"/>
     <wire from="(2740,900)" to="(2740,1070)"/>
-    <wire from="(2790,1590)" to="(2880,1590)"/>
-    <wire from="(2800,1620)" to="(2810,1620)"/>
-    <wire from="(2810,1610)" to="(2810,1620)"/>
-    <wire from="(2810,1610)" to="(2880,1610)"/>
-    <wire from="(2820,1200)" to="(2880,1200)"/>
-    <wire from="(2820,1250)" to="(2830,1250)"/>
-    <wire from="(2820,1320)" to="(2910,1320)"/>
-    <wire from="(2830,1220)" to="(2830,1250)"/>
-    <wire from="(2830,1220)" to="(2880,1220)"/>
-    <wire from="(2860,1510)" to="(2880,1510)"/>
-    <wire from="(2870,1700)" to="(2900,1700)"/>
-    <wire from="(2880,1490)" to="(2880,1510)"/>
-    <wire from="(2890,1480)" to="(3210,1480)"/>
-    <wire from="(2900,1690)" to="(2900,1700)"/>
-    <wire from="(2910,1290)" to="(2910,1320)"/>
-    <wire from="(2910,1680)" to="(3010,1680)"/>
-    <wire from="(2910,2040)" to="(2910,2090)"/>
-    <wire from="(2920,1280)" to="(3100,1280)"/>
-    <wire from="(2920,2040)" to="(2920,2090)"/>
-    <wire from="(2920,2040)" to="(2990,2040)"/>
-    <wire from="(2930,2060)" to="(2930,2090)"/>
-    <wire from="(2930,2060)" to="(3250,2060)"/>
-    <wire from="(2940,1180)" to="(3100,1180)"/>
-    <wire from="(2940,1570)" to="(3010,1570)"/>
-    <wire from="(2940,2110)" to="(2940,2130)"/>
-    <wire from="(2940,2130)" to="(3210,2130)"/>
-    <wire from="(2950,1620)" to="(2950,1640)"/>
-    <wire from="(2970,1330)" to="(3000,1330)"/>
-    <wire from="(2970,1380)" to="(2990,1380)"/>
-    <wire from="(2970,1400)" to="(2990,1400)"/>
+    <wire from="(2780,1200)" to="(2790,1200)"/>
+    <wire from="(2780,1220)" to="(2790,1220)"/>
+    <wire from="(2780,1510)" to="(2800,1510)"/>
+    <wire from="(2780,1590)" to="(2790,1590)"/>
+    <wire from="(2780,1610)" to="(2790,1610)"/>
+    <wire from="(2780,1700)" to="(2810,1700)"/>
+    <wire from="(2790,1320)" to="(2800,1320)"/>
+    <wire from="(2800,1290)" to="(2800,1320)"/>
+    <wire from="(2800,1490)" to="(2800,1510)"/>
+    <wire from="(2810,1280)" to="(2870,1280)"/>
+    <wire from="(2810,1480)" to="(3080,1480)"/>
+    <wire from="(2810,1690)" to="(2810,1700)"/>
+    <wire from="(2820,1680)" to="(2880,1680)"/>
+    <wire from="(2840,1020)" to="(2880,1020)"/>
+    <wire from="(2840,1330)" to="(2870,1330)"/>
+    <wire from="(2840,1380)" to="(2860,1380)"/>
+    <wire from="(2840,1400)" to="(2860,1400)"/>
+    <wire from="(2850,1180)" to="(2870,1180)"/>
+    <wire from="(2850,1570)" to="(2880,1570)"/>
+    <wire from="(2860,1060)" to="(2880,1060)"/>
+    <wire from="(2870,1110)" to="(2870,1140)"/>
+    <wire from="(2870,1110)" to="(2900,1110)"/>
+    <wire from="(2870,1140)" to="(2870,1180)"/>
+    <wire from="(2870,1140)" to="(2900,1140)"/>
+    <wire from="(2870,1180)" to="(2870,1280)"/>
+    <wire from="(2870,1280)" to="(2970,1280)"/>
+    <wire from="(2870,1330)" to="(2870,1370)"/>
+    <wire from="(2870,1330)" to="(3030,1330)"/>
+    <wire from="(2880,1430)" to="(2880,1570)"/>
+    <wire from="(2880,1430)" to="(2910,1430)"/>
+    <wire from="(2880,1570)" to="(2880,1680)"/>
+    <wire from="(2880,1570)" to="(2910,1570)"/>
+    <wire from="(2890,1390)" to="(2910,1390)"/>
+    <wire from="(2900,1000)" to="(2950,1000)"/>
+    <wire from="(2910,1570)" to="(2910,1600)"/>
+    <wire from="(2910,1570)" to="(2930,1570)"/>
+    <wire from="(2910,1600)" to="(2930,1600)"/>
+    <wire from="(2910,1770)" to="(3010,1770)"/>
+    <wire from="(2940,1040)" to="(2950,1040)"/>
+    <wire from="(2970,1280)" to="(2970,1370)"/>
+    <wire from="(2970,1370)" to="(3010,1370)"/>
+    <wire from="(2970,1410)" to="(2980,1410)"/>
+    <wire from="(2980,1390)" to="(2980,1410)"/>
+    <wire from="(2980,1390)" to="(3010,1390)"/>
     <wire from="(2980,1870)" to="(2990,1870)"/>
-    <wire from="(2990,1780)" to="(2990,1820)"/>
-    <wire from="(2990,1820)" to="(3000,1820)"/>
-    <wire from="(2990,1870)" to="(2990,2040)"/>
-    <wire from="(3000,1330)" to="(3000,1370)"/>
-    <wire from="(3000,1330)" to="(3160,1330)"/>
-    <wire from="(3010,1430)" to="(3010,1570)"/>
-    <wire from="(3010,1430)" to="(3030,1430)"/>
-    <wire from="(3010,1570)" to="(3010,1680)"/>
-    <wire from="(3010,1570)" to="(3040,1570)"/>
-    <wire from="(3020,1390)" to="(3030,1390)"/>
-    <wire from="(3040,1570)" to="(3040,1600)"/>
-    <wire from="(3040,1570)" to="(3060,1570)"/>
-    <wire from="(3040,1600)" to="(3060,1600)"/>
-    <wire from="(3090,1410)" to="(3100,1410)"/>
-    <wire from="(3100,1110)" to="(3100,1140)"/>
-    <wire from="(3100,1110)" to="(3130,1110)"/>
-    <wire from="(3100,1140)" to="(3100,1180)"/>
-    <wire from="(3100,1140)" to="(3130,1140)"/>
-    <wire from="(3100,1180)" to="(3100,1280)"/>
-    <wire from="(3100,1280)" to="(3100,1370)"/>
-    <wire from="(3100,1370)" to="(3140,1370)"/>
-    <wire from="(3100,1390)" to="(3100,1410)"/>
-    <wire from="(3100,1390)" to="(3140,1390)"/>
-    <wire from="(3140,1360)" to="(3140,1370)"/>
-    <wire from="(3160,1330)" to="(3160,1360)"/>
-    <wire from="(3160,1400)" to="(3160,1430)"/>
-    <wire from="(3160,1430)" to="(3340,1430)"/>
-    <wire from="(3180,1380)" to="(3210,1380)"/>
-    <wire from="(3190,2210)" to="(3250,2210)"/>
-    <wire from="(3210,1330)" to="(3210,1380)"/>
-    <wire from="(3210,1380)" to="(3210,1480)"/>
-    <wire from="(3210,1380)" to="(3240,1380)"/>
-    <wire from="(3210,2130)" to="(3270,2130)"/>
-    <wire from="(3230,1250)" to="(3260,1250)"/>
-    <wire from="(3230,1260)" to="(3260,1260)"/>
-    <wire from="(3230,1270)" to="(3260,1270)"/>
-    <wire from="(3230,1280)" to="(3260,1280)"/>
-    <wire from="(3230,1290)" to="(3260,1290)"/>
-    <wire from="(3230,1300)" to="(3250,1300)"/>
-    <wire from="(3230,1310)" to="(3240,1310)"/>
-    <wire from="(3230,1320)" to="(3230,1330)"/>
-    <wire from="(3230,1330)" to="(3240,1330)"/>
-    <wire from="(3240,1310)" to="(3240,1320)"/>
-    <wire from="(3240,1320)" to="(3260,1320)"/>
-    <wire from="(3240,1330)" to="(3240,1340)"/>
-    <wire from="(3240,1330)" to="(3260,1330)"/>
-    <wire from="(3240,1340)" to="(3330,1340)"/>
-    <wire from="(3240,1380)" to="(3240,1410)"/>
-    <wire from="(3240,1380)" to="(3260,1380)"/>
-    <wire from="(3240,1410)" to="(3260,1410)"/>
-    <wire from="(3240,1870)" to="(3250,1870)"/>
-    <wire from="(3250,1300)" to="(3250,1310)"/>
-    <wire from="(3250,1310)" to="(3260,1310)"/>
-    <wire from="(3250,1870)" to="(3250,2060)"/>
-    <wire from="(3260,1290)" to="(3260,1300)"/>
-    <wire from="(3270,1970)" to="(3270,2130)"/>
-    <wire from="(3270,2130)" to="(3310,2130)"/>
-    <wire from="(3290,1580)" to="(3430,1580)"/>
-    <wire from="(3290,1600)" to="(3340,1600)"/>
-    <wire from="(3290,1680)" to="(3330,1680)"/>
-    <wire from="(3290,1700)" to="(3330,1700)"/>
-    <wire from="(3290,1720)" to="(3330,1720)"/>
-    <wire from="(3290,1740)" to="(3330,1740)"/>
-    <wire from="(3290,1760)" to="(3330,1760)"/>
-    <wire from="(3290,1780)" to="(3330,1780)"/>
-    <wire from="(3290,1800)" to="(3330,1800)"/>
-    <wire from="(3290,1820)" to="(3330,1820)"/>
-    <wire from="(3290,1840)" to="(3330,1840)"/>
-    <wire from="(3290,1860)" to="(3330,1860)"/>
-    <wire from="(3290,1880)" to="(3330,1880)"/>
-    <wire from="(3290,1900)" to="(3330,1900)"/>
-    <wire from="(3290,1920)" to="(3330,1920)"/>
-    <wire from="(3290,1940)" to="(3330,1940)"/>
-    <wire from="(3290,1960)" to="(3330,1960)"/>
-    <wire from="(3290,2200)" to="(3340,2200)"/>
-    <wire from="(3300,2030)" to="(3460,2030)"/>
-    <wire from="(3320,1290)" to="(3340,1290)"/>
-    <wire from="(3320,2050)" to="(3320,2110)"/>
-    <wire from="(3320,2050)" to="(3370,2050)"/>
-    <wire from="(3330,1300)" to="(3330,1340)"/>
-    <wire from="(3330,1300)" to="(3340,1300)"/>
-    <wire from="(3340,1310)" to="(3340,1430)"/>
-    <wire from="(3340,2200)" to="(3340,2240)"/>
-    <wire from="(3340,2240)" to="(3360,2240)"/>
-    <wire from="(3350,2090)" to="(3350,2110)"/>
-    <wire from="(3350,2090)" to="(3370,2090)"/>
-    <wire from="(3350,2110)" to="(3380,2110)"/>
-    <wire from="(3360,1320)" to="(3360,1350)"/>
-    <wire from="(3360,1350)" to="(3400,1350)"/>
-    <wire from="(3360,1370)" to="(3360,1460)"/>
-    <wire from="(3360,1370)" to="(3400,1370)"/>
-    <wire from="(3360,1460)" to="(3410,1460)"/>
-    <wire from="(3360,2200)" to="(3360,2240)"/>
-    <wire from="(3380,1390)" to="(3380,1430)"/>
-    <wire from="(3380,1390)" to="(3400,1390)"/>
-    <wire from="(3380,1430)" to="(3410,1430)"/>
-    <wire from="(3380,2110)" to="(3380,2150)"/>
-    <wire from="(3400,2200)" to="(3400,2210)"/>
-    <wire from="(3400,2210)" to="(3500,2210)"/>
-    <wire from="(3430,1580)" to="(3430,1710)"/>
-    <wire from="(3430,1710)" to="(3480,1710)"/>
-    <wire from="(3430,2070)" to="(3460,2070)"/>
-    <wire from="(3460,1350)" to="(3480,1350)"/>
-    <wire from="(3480,1350)" to="(3520,1350)"/>
-    <wire from="(3480,1700)" to="(3480,1710)"/>
-    <wire from="(3500,1550)" to="(3590,1550)"/>
-    <wire from="(3500,1560)" to="(3580,1560)"/>
-    <wire from="(3500,1570)" to="(3570,1570)"/>
-    <wire from="(3500,1580)" to="(3560,1580)"/>
-    <wire from="(3500,1590)" to="(3550,1590)"/>
-    <wire from="(3500,1600)" to="(3540,1600)"/>
-    <wire from="(3500,1610)" to="(3530,1610)"/>
-    <wire from="(3500,1620)" to="(3520,1620)"/>
-    <wire from="(3510,2050)" to="(3520,2050)"/>
-    <wire from="(3520,1620)" to="(3520,1690)"/>
-    <wire from="(3520,1690)" to="(3590,1690)"/>
-    <wire from="(3530,1610)" to="(3530,1670)"/>
-    <wire from="(3530,1670)" to="(3590,1670)"/>
-    <wire from="(3540,1600)" to="(3540,1650)"/>
-    <wire from="(3540,1650)" to="(3590,1650)"/>
-    <wire from="(3550,1590)" to="(3550,1630)"/>
-    <wire from="(3550,1630)" to="(3590,1630)"/>
-    <wire from="(3560,1580)" to="(3560,1610)"/>
-    <wire from="(3560,1610)" to="(3590,1610)"/>
-    <wire from="(3560,2190)" to="(3620,2190)"/>
-    <wire from="(3560,2230)" to="(3580,2230)"/>
-    <wire from="(3570,1570)" to="(3570,1590)"/>
-    <wire from="(3570,1590)" to="(3590,1590)"/>
-    <wire from="(3580,1560)" to="(3580,1570)"/>
-    <wire from="(3580,1570)" to="(3590,1570)"/>
-    <wire from="(3610,2230)" to="(3620,2230)"/>
+    <wire from="(2990,1870)" to="(2990,2030)"/>
+    <wire from="(3000,1020)" to="(3020,1020)"/>
+    <wire from="(3000,980)" to="(3020,980)"/>
+    <wire from="(3010,1360)" to="(3010,1370)"/>
+    <wire from="(3010,1770)" to="(3010,1970)"/>
+    <wire from="(3010,1970)" to="(3010,2020)"/>
+    <wire from="(3030,1330)" to="(3030,1360)"/>
+    <wire from="(3030,1400)" to="(3030,1430)"/>
+    <wire from="(3030,1430)" to="(3210,1430)"/>
+    <wire from="(3030,1800)" to="(3120,1800)"/>
+    <wire from="(3030,1820)" to="(3120,1820)"/>
+    <wire from="(3050,1380)" to="(3080,1380)"/>
+    <wire from="(3080,1000)" to="(3110,1000)"/>
+    <wire from="(3080,1330)" to="(3080,1380)"/>
+    <wire from="(3080,1380)" to="(3080,1480)"/>
+    <wire from="(3080,1380)" to="(3110,1380)"/>
+    <wire from="(3100,1250)" to="(3130,1250)"/>
+    <wire from="(3100,1260)" to="(3130,1260)"/>
+    <wire from="(3100,1270)" to="(3130,1270)"/>
+    <wire from="(3100,1280)" to="(3130,1280)"/>
+    <wire from="(3100,1290)" to="(3130,1290)"/>
+    <wire from="(3100,1300)" to="(3120,1300)"/>
+    <wire from="(3100,1310)" to="(3110,1310)"/>
+    <wire from="(3100,1320)" to="(3100,1330)"/>
+    <wire from="(3100,1330)" to="(3110,1330)"/>
+    <wire from="(3100,960)" to="(3110,960)"/>
+    <wire from="(3110,1310)" to="(3110,1320)"/>
+    <wire from="(3110,1320)" to="(3130,1320)"/>
+    <wire from="(3110,1330)" to="(3110,1340)"/>
+    <wire from="(3110,1330)" to="(3130,1330)"/>
+    <wire from="(3110,1340)" to="(3200,1340)"/>
+    <wire from="(3110,1380)" to="(3110,1410)"/>
+    <wire from="(3110,1380)" to="(3130,1380)"/>
+    <wire from="(3110,1410)" to="(3130,1410)"/>
+    <wire from="(3120,1300)" to="(3120,1310)"/>
+    <wire from="(3120,1310)" to="(3130,1310)"/>
+    <wire from="(3120,1720)" to="(3120,1800)"/>
+    <wire from="(3120,1720)" to="(3170,1720)"/>
+    <wire from="(3120,1820)" to="(3120,1920)"/>
+    <wire from="(3120,1920)" to="(3170,1920)"/>
+    <wire from="(3130,1290)" to="(3130,1300)"/>
+    <wire from="(3160,980)" to="(3170,980)"/>
+    <wire from="(3170,1700)" to="(3170,1720)"/>
+    <wire from="(3170,1720)" to="(3210,1720)"/>
+    <wire from="(3170,1900)" to="(3170,1920)"/>
+    <wire from="(3170,1920)" to="(3210,1920)"/>
+    <wire from="(3190,1290)" to="(3210,1290)"/>
+    <wire from="(3190,1550)" to="(3280,1550)"/>
+    <wire from="(3190,1560)" to="(3270,1560)"/>
+    <wire from="(3190,1570)" to="(3260,1570)"/>
+    <wire from="(3190,1580)" to="(3250,1580)"/>
+    <wire from="(3190,1590)" to="(3240,1590)"/>
+    <wire from="(3190,1600)" to="(3230,1600)"/>
+    <wire from="(3190,1610)" to="(3220,1610)"/>
+    <wire from="(3190,1620)" to="(3210,1620)"/>
+    <wire from="(3190,1690)" to="(3200,1690)"/>
+    <wire from="(3190,1750)" to="(3280,1750)"/>
+    <wire from="(3190,1760)" to="(3270,1760)"/>
+    <wire from="(3190,1770)" to="(3260,1770)"/>
+    <wire from="(3190,1780)" to="(3250,1780)"/>
+    <wire from="(3190,1790)" to="(3240,1790)"/>
+    <wire from="(3190,1800)" to="(3230,1800)"/>
+    <wire from="(3190,1810)" to="(3220,1810)"/>
+    <wire from="(3190,1820)" to="(3210,1820)"/>
+    <wire from="(3200,1300)" to="(3200,1340)"/>
+    <wire from="(3200,1300)" to="(3210,1300)"/>
+    <wire from="(3200,1690)" to="(3200,1710)"/>
+    <wire from="(3200,1710)" to="(3280,1710)"/>
+    <wire from="(3210,1310)" to="(3210,1430)"/>
+    <wire from="(3210,1620)" to="(3210,1690)"/>
+    <wire from="(3210,1690)" to="(3280,1690)"/>
+    <wire from="(3210,1720)" to="(3210,1730)"/>
+    <wire from="(3210,1730)" to="(3220,1730)"/>
+    <wire from="(3210,1820)" to="(3210,1890)"/>
+    <wire from="(3210,1890)" to="(3280,1890)"/>
+    <wire from="(3210,1920)" to="(3210,1930)"/>
+    <wire from="(3210,1930)" to="(3220,1930)"/>
+    <wire from="(3220,1610)" to="(3220,1670)"/>
+    <wire from="(3220,1670)" to="(3280,1670)"/>
+    <wire from="(3220,1810)" to="(3220,1870)"/>
+    <wire from="(3220,1870)" to="(3280,1870)"/>
+    <wire from="(3230,1320)" to="(3230,1350)"/>
+    <wire from="(3230,1350)" to="(3270,1350)"/>
+    <wire from="(3230,1600)" to="(3230,1650)"/>
+    <wire from="(3230,1650)" to="(3280,1650)"/>
+    <wire from="(3230,1800)" to="(3230,1850)"/>
+    <wire from="(3230,1850)" to="(3280,1850)"/>
+    <wire from="(3240,1590)" to="(3240,1630)"/>
+    <wire from="(3240,1630)" to="(3280,1630)"/>
+    <wire from="(3240,1790)" to="(3240,1830)"/>
+    <wire from="(3240,1830)" to="(3280,1830)"/>
+    <wire from="(3250,1580)" to="(3250,1610)"/>
+    <wire from="(3250,1610)" to="(3280,1610)"/>
+    <wire from="(3250,1780)" to="(3250,1810)"/>
+    <wire from="(3250,1810)" to="(3280,1810)"/>
+    <wire from="(3260,1370)" to="(3270,1370)"/>
+    <wire from="(3260,1390)" to="(3270,1390)"/>
+    <wire from="(3260,1570)" to="(3260,1590)"/>
+    <wire from="(3260,1590)" to="(3280,1590)"/>
+    <wire from="(3260,1770)" to="(3260,1790)"/>
+    <wire from="(3260,1790)" to="(3280,1790)"/>
+    <wire from="(3270,1560)" to="(3270,1570)"/>
+    <wire from="(3270,1570)" to="(3280,1570)"/>
+    <wire from="(3270,1760)" to="(3270,1770)"/>
+    <wire from="(3270,1770)" to="(3280,1770)"/>
+    <wire from="(3330,1350)" to="(3350,1350)"/>
+    <wire from="(3350,1350)" to="(3390,1350)"/>
   </circuit>
   <circuit name="stack_pointer">
     <a name="appearance" val="custom"/>

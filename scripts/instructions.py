@@ -1,42 +1,29 @@
 from collections import defaultdict
 
-# Halt
-HLT = 1 << 23
-# Ram Control
-MHI = 1 << 22
-MLI = 1 << 21
-RI = 1 << 20
-MU = 1 << 19
-MB = 1 << 18
-# Instruction Control
-II = 1 << 17
-# A Control
-AI = 1 << 16
-# B Control
-BI = 1 << 15
-# ALU Control
-SU = 1 << 14
-FI = 1 << 13
-# Counter control
-CE = 1 << 12
-CHI = 1 << 11
-CLI = 1 << 10
-# Stack Control
-STACK_MODE1 = 1 << 9
-STACK_MODE0 = 1 << 8
-SE = STACK_MODE0
-SI = STACK_MODE1
-SD = STACK_MODE1 | STACK_MODE0
-# Memory Update
-
-# Reserved
-X = 1 << 8
-X = 1 << 7
-X = 1 << 6
-X = 1 << 5
 # Instruction end
-IE = 1 << 4
-# Bus control (4 bottom bits)
+IE = 1 << 15
+# Counter control
+CE = 1 << 14
+# Ram Control
+MU = 1 << 13
+MB = 1 << 12
+# ALU Control
+SU = 1 << 11
+FI = 1 << 10
+# Stack Pointer Control (bit 8-9)
+SE = 1 << 8
+SI = 2 << 8
+SD = 3 << 8
+# Bus in control (bit 4-7)
+RI = 1 << 4
+AI = 2 << 4
+BI = 3 << 4
+II = 4 << 4
+CHI = 5 << 4
+CLI = 6 << 4
+MHI = 7 << 4
+MLI = 8 << 4
+# Bus out control (bit 0-3)
 RO = 1
 AO = 2
 BO = 3
@@ -45,6 +32,7 @@ CHO = 5
 CLO = 6
 SHO = 7
 SLO = 8
+HLT = 15 #We can't halt and output at the same time anyway :D
 
 
 # Flag logic

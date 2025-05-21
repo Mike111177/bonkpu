@@ -37,7 +37,7 @@ def write_instructions(
     post_fn=lambda a: a,
     output_folder=DEFAULT_OUTPUT_FOLDER,
 ):
-    bin_names = ["A", "B", "C", "MASTER"]
+    bin_names = ["A", "B", "MASTER"]
     output_files = [os.path.join(output_folder, f"{name}.bin") for name in bin_names]
     os.makedirs(output_folder, exist_ok=True)
     with tempfile.TemporaryDirectory() as tempDir:
@@ -53,10 +53,9 @@ def write_instructions(
                 post_fn(ins)
 
                 for step in range(16):
-                    bins[0].write(bytes([(ins[step] >> 16) & 0xFF]))
-                    bins[1].write(bytes([(ins[step] >> 8) & 0xFF]))
-                    bins[2].write(bytes([ins[step] & 0xFF]))
-                    bins[3].write(struct.pack(">I", ins[step]))
+                    bins[0].write(bytes([(ins[step] >> 8) & 0xFF]))
+                    bins[1].write(bytes([(ins[step] >> 0) & 0xFF]))
+                    bins[2].write(struct.pack(">H", ins[step]))
                 if len(ins) > 16:
                     print(
                         f"WARNING: Instruction {ins_addr} is too large ({len(ins)}). Truncated. Opcode: {opcode}. Flags: {flags:03b}"
