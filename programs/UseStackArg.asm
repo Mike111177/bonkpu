@@ -1,0 +1,6 @@
+SEI
+LD 4
+PSH
+LD 6
+ADD ^1
+HLT

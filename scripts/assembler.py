@@ -46,6 +46,8 @@ def parse_line(words: list[str]):
     arg = args[0]
     if arg.startswith("#") and "p" in modes:
         return [it[modes["p"]], *parse_arg16(arg[1:])], 3
+    elif arg.startswith("^") and "s" in modes:
+        return [it[modes["s"]], *parse_arg16(arg[1:])], 3
     elif arg.startswith("$") and "a" in modes:
         return [it[modes["a"]], *parse_arg16(arg[1:])], 3
     elif re.match(r"^[a-zA-Z_]\w*$", arg):

@@ -1,22 +1,25 @@
-SEI ; init stack pointer
-A=$0x8000
-B=$0x8001
-    LD 4      ; 4x6
-    ST A
-    LD 6
-    ST B
+    SEI ; init stack pointer    
+    PSH 4
+    PSH 6
     CALL multiply
-    ST A      ; resultx9
-    LD 9
-    ST B
+    SI
+    SI
+    PSH
+    PSH 9
     CALL multiply
     HLT
 
-multiply:
+multiply: ;  (A = ^1, B = ^2, RET = A)
+A = ^5 
+B = ^6
+COUNTER = ^1
+    PSH
+ACC = ^2
+    PSH
     LD A
     SUB B
     JNC skip_swap ; If A>B swap
-TMP=$0x8002
+TMP = ^1 ; 
     LD A
     ST TMP
     LD B
@@ -24,8 +27,6 @@ TMP=$0x8002
     LD TMP
     ST B
 skip_swap:
-COUNTER=$0x8002
-ACC=$0x8003
     LD A       ; load first arg in to loop counter
     ST COUNTER
     LD 0       ; init acc
@@ -39,4 +40,6 @@ loop:
     ST COUNTER
     JNZ loop
     LD ACC
+    POP
+    POP
     RET
