@@ -1,13 +1,34 @@
-;init
-    LD 1       
-    ST $0x8000
-loop:
-    ST $0x8001
-    LD $0x8000
-    ADD $0x8001
-    ST $0x8000
-    LD $0x8001
-    ADD $0x8000
-    JNC loop
-    LD $0x8000; A should be 233
+    SEI
+    PSH 13
+    CALL fibonachi
     HLT
+
+fibonachi: ;(const i = ^1, result = A)
+i = ^3
+    LD i
+    CMP 0
+    JEZ base0
+    CMP 1
+    JEZ base1
+    SD; fib1
+i = ^4
+fib1 = ^1
+    SUB 1
+    PSH
+    CALL fibonachi
+    SI
+    ST fib1
+    LD i
+    SUB 2
+    PSH
+    CALL fibonachi
+    SI
+    ADD fib1
+    SI
+    RET
+base1:
+    LD 1
+    RET
+base0:
+    LD 0
+    RET
