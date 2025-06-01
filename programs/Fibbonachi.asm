@@ -4,14 +4,14 @@
     HLT
 
 fibonachi: ;(const i = ^1, result = A)
-i = ^3
+i = ^2
     LD i
     CMP 0
     JEZ base0
     CMP 1
     JEZ base1
     SD; fib1
-i = ^4
+i = ^3
 fib1 = ^1
     SUB 1
     PSH

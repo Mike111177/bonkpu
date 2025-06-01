@@ -6,7 +6,7 @@ IE = 1 << 15
 CE = 1 << 14
 # Ram Control
 MU = 1 << 13
-MB = 1 << 12
+# 12
 # ALU Control
 SU = 1 << 11
 FI = 1 << 10
@@ -19,22 +19,17 @@ RI = 1 << 4
 AI = 2 << 4
 BI = 3 << 4
 II = 4 << 4
-CHI = 5 << 4
-CLI = 6 << 4
-MHI = 7 << 4
-MLI = 8 << 4
-OHI = 9 << 4
-OLI = 10 << 4
-OC = 11 << 4
+CI = 5 << 4
+MI = 6 << 4
+OI = 7 << 4
+OC = 8 << 4
 # Bus out control (bit 0-3)
 RO = 1
 AO = 2
 BO = 3
 EO = 4
-CHO = 5
-CLO = 6
-SHO = 7
-SLO = 8
+CO = 5
+SO = 6
 HLT = 15  # We can't halt and output at the same time anyway :D
 
 
@@ -48,41 +43,22 @@ carrySet = lambda f: f & FLAG_CARRY
 # overflowSet = lambda f: bool(f & FLAG_SIGN) != bool(f & FLAG_CARRY) #nvm i need a hardware flag for this to work
 
 
-select_count = [MLI | CLO, MHI | CHO | MU]
+select_count = [MI | CO | MU]
 
 # Gets prepended to all instructions
 ld_op = [*select_count, RO | II | CE]
 
-jumpa = [
-    *select_count,
-    RO | BI | CE,
-    CHI | RO | MB | CE,
-    CLI | BO,
-]
+jumpa = [*select_count, CI | RO | CE]
 
-skip_a = [CE, CE]
+skip_a = [CE]
 
-select_address = [
-    MLI | RO,
-    MHI | RO | MB | MU,
-]
+select_address = [MI | RO | MU]
 
-select_address_arg = [
-    *select_count,
-    MLI | RO | CE,
-    MHI | RO | MB | MU | CE,
-]
+select_address_arg = [*select_count, MI | RO | MU | CE]
 
-select_offset_arg = [
-    *select_count,
-    OLI | RO | CE,
-    OHI | RO | MB | CE,
-]
+select_offset_arg = [*select_count, OI | RO | CE]
 
-select_stack = [
-    MLI | SLO,
-    MHI | SHO | MU,
-]
+select_stack = [MI | SO | MU]
 
 instruction_microcode = [
     ("NOP", []),
@@ -117,8 +93,8 @@ instruction_microcode = [
     ("PSH", [*select_stack, RI | AO | SD]),
     ("PSHi", [*select_count, RO | BI | CE, *select_stack, RI | BO | SD]),
     ("POP", [SI, *select_stack, AI | RO]),
-    ("CALLa", [*select_stack, RI | CHO | SD, *select_stack, RI | CLO | SD, *jumpa]),
-    ("RET", [SI, *select_stack, CLI | RO | SI, *select_stack, CHI | RO, *skip_a]),
+    ("CALLa", [*select_stack, RI | CO | SD, *jumpa]),
+    ("RET", [SI, *select_stack, CI | RO, *skip_a]),
     ("HLT", [HLT]),
 ]
 

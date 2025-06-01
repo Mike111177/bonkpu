@@ -18,10 +18,6 @@ def parse_number(s):
         return int(s, 10)
 
 
-def parse_arg16(arg: str):
-    return struct.pack(f"<{"h" if arg[0]=="-" else "H"}", parse_number(arg))
-
-
 def parse_arg8(arg: str):
     return [parse_number(arg)]
 
@@ -45,15 +41,15 @@ def parse_line(words: list[str]):
 
     arg = args[0]
     if arg.startswith("#") and "p" in modes:
-        return [it[modes["p"]], *parse_arg16(arg[1:])], 3
+        return [it[modes["p"]], *parse_arg8(arg[1:])], 2
     elif arg.startswith("^") and "s" in modes:
-        return [it[modes["s"]], *parse_arg16(arg[1:])], 3
+        return [it[modes["s"]], *parse_arg8(arg[1:])], 2
     elif arg.startswith("$") and "a" in modes:
-        return [it[modes["a"]], *parse_arg16(arg[1:])], 3
+        return [it[modes["a"]], *parse_arg8(arg[1:])], 2
     elif re.match(r"^[a-zA-Z_]\w*$", arg):
         if "a" not in modes:
             raise ValueError(f"Instruction '{instr}' does not support label arguments")
-        return [it[modes["a"]], arg], 3
+        return [it[modes["a"]], arg], 2
     elif "i" in modes:
         return [it[modes["i"]], *parse_arg8(arg)], 2
     else:
@@ -114,7 +110,7 @@ def assemble_file(infile, outfile, print_bin=False):
                 if byte not in labels:
                     raise ValueError(f"Undefined label: {byte}")
                 label_addr = labels[byte]
-                final_output.extend(struct.pack("<H", label_addr))
+                final_output.append(label_addr)
             else:
                 final_output.append(byte)
 

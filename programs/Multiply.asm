@@ -10,8 +10,8 @@
     HLT
 
 multiply: ;  (A = ^1, B = ^2, RET = A)
-A = ^5 
-B = ^6
+A = ^4 
+B = ^5
 COUNTER = ^1
     PSH
 ACC = ^2
