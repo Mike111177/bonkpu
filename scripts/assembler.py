@@ -70,31 +70,42 @@ def write_machine_code(filepath: str, code):
         file.write(bytes(code))
 
 
-def assemble_file(infile, outfile):
+def assemble_file(infile, outfile, print_bin=False):
     lines = read_file(infile)
 
     ir = []
     labels = {}
     defs = {}
     pos = 0
-    for line in lines:
-        before_comment = line.upper().split(";")[0]
-        if "=" in before_comment:
-            name, value = [section.strip() for section in before_comment.split("=")]
-            defs[name] = value
-        elif len(
-            words := [
-                defs[word] if word in defs else word
-                for word in before_comment.strip().split()
-            ]
-        ):
-            parsed, size = parse_line(words)
-            if isinstance(parsed, tuple):
-                labels[parsed[1]] = pos
-            else:
-                ir.append(parsed)
-            # print(f"{line.strip()} - {pos:x}")
-            pos += size
+    for line_number, line in enumerate(lines):
+        line_beg = pos
+        bin_out = False
+        try:
+            before_comment = line.upper().split(";")[0]
+            if "=" in before_comment:
+                name, value = [section.strip() for section in before_comment.split("=")]
+                defs[name] = value
+            elif len(
+                words := [
+                    defs[word] if word in defs else word
+                    for word in before_comment.strip().split()
+                ]
+            ):
+                parsed, size = parse_line(words)
+                if isinstance(parsed, tuple):
+                    labels[parsed[1]] = pos
+                else:
+                    ir.append(parsed)
+                    bin_out = True
+                # print(f"{line.strip()} - {pos:x}")
+                pos += size
+        except Exception as e:
+            raise Exception(f"Error parsing line {line_number}: {line}")
+        if print_bin:
+            if bin_out: 
+                print(f"{line_number:4} ({line_beg:04x}): {line}".rstrip())
+            else: 
+                print(f"{line_number:4}       : {line}".rstrip())
 
     final_output = []
     for instr in ir:
@@ -116,9 +127,10 @@ def main():
     parser = argparse.ArgumentParser(description="Assemble a file")
     parser.add_argument("infile", help="Path to the file to be read")
     parser.add_argument("outfile", help="Path to the file to be output")
+    parser.add_argument("-p", "--print", action='store_true', help="Print file out with line numbers and addresses")
 
     args = parser.parse_args()
-    assemble_file(args.infile, args.outfile)
+    assemble_file(args.infile, args.outfile, print_bin=args.print)
 
 
 if __name__ == "__main__":
