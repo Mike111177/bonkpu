@@ -19,7 +19,7 @@ def parse_number(s):
 
 
 def parse_arg16(arg: str):
-    return struct.pack("<H", parse_number(arg))
+    return struct.pack(f"<{"h" if arg[0]=="-" else "H"}", parse_number(arg))
 
 
 def parse_arg8(arg: str):
