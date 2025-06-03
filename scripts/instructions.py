@@ -1,4 +1,5 @@
 from collections import defaultdict
+import re
 
 # Instruction end
 IE = 1 << 15
@@ -108,11 +109,7 @@ def microcode_post_fn(instruction: list[int]):
 
 instruction_table = {ins: idx for idx, (ins, _) in enumerate(instruction_microcode)}
 instruction_variants = defaultdict(dict)
-for variant, opcode in instruction_table.items():
-    if variant[-1] in {"i", "a", "p", "s"}:
-        base = variant[:-1]
-        mode = variant[-1]
-    else:
-        base = variant
-        mode = None
-    instruction_variants[base][mode] = variant
+for instr, opcode in instruction_table.items():
+    match = re.match(r'^([A-Z]+)(.*)$', instr)
+    base, variant =  match.group(1), match.group(2)
+    instruction_variants[base][variant] = instr

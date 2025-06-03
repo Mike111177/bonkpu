@@ -18,8 +18,24 @@ def parse_number(s):
         return int(s, 10)
 
 
-def parse_arg8(arg: str):
-    return [parse_number(arg)]
+def parse_num8(num: str):
+    return [parse_number(num)]
+
+
+def parse_arg(arg: str):
+    try:
+        if arg.startswith("#"):
+            return "p", *parse_num8(arg[1:])
+        elif arg.startswith("^"):
+            return "s", *parse_num8(arg[1:])
+        elif arg.startswith("$"):
+            return "a", *parse_num8(arg[1:])
+        elif re.match(r"^[a-zA-Z_]\w*$", arg):
+            return "a", arg
+        else:
+            return "i", *parse_num8(arg)
+    except:
+        raise ValueError(f"Could not parse arg {arg}")
 
 
 def parse_line(words: list[str]):
@@ -29,31 +45,18 @@ def parse_line(words: list[str]):
         return ("LABEL", words[0].rstrip(":")), 0
 
     instr, *args = words
-    modes = iv.get(instr)
-    if modes is None:
+    variants = iv.get(instr)
+    if variants is None:
         raise ValueError(f"Unknown instruction: {instr}")
 
-    if not args:
-        if None in modes:
-            return [it[modes[None]]], 1
-        else:
-            raise ValueError(f"Instruction '{instr}' expects an argument")
-
-    arg = args[0]
-    if arg.startswith("#") and "p" in modes:
-        return [it[modes["p"]], *parse_arg8(arg[1:])], 2
-    elif arg.startswith("^") and "s" in modes:
-        return [it[modes["s"]], *parse_arg8(arg[1:])], 2
-    elif arg.startswith("$") and "a" in modes:
-        return [it[modes["a"]], *parse_arg8(arg[1:])], 2
-    elif re.match(r"^[a-zA-Z_]\w*$", arg):
-        if "a" not in modes:
-            raise ValueError(f"Instruction '{instr}' does not support label arguments")
-        return [it[modes["a"]], arg], 2
-    elif "i" in modes:
-        return [it[modes["i"]], *parse_arg8(arg)], 2
+    types, output = zip(*[parse_arg(arg) for arg in args]) if args else ([], [])
+    variant = "".join(types)
+    if variant in variants:
+        return [it[variants[variant]], *output], len(output) + 1
     else:
-        raise ValueError(f"Instruction '{instr}' does not support argument: {arg}")
+        raise ValueError(
+            f"Instruction '{instr}' does not support args: {" ".join(args)}"
+        )
 
 
 def read_file(filepath):
@@ -98,9 +101,9 @@ def assemble_file(infile, outfile, print_bin=False):
         except Exception as e:
             raise Exception(f"Error parsing line {line_number}: {line}")
         if print_bin:
-            if bin_out: 
+            if bin_out:
                 print(f"{line_number:4} ({line_beg:04x}): {line}".rstrip())
-            else: 
+            else:
                 print(f"{line_number:4}       : {line}".rstrip())
 
     final_output = []
@@ -115,15 +118,18 @@ def assemble_file(infile, outfile, print_bin=False):
                 final_output.append(byte)
 
     write_machine_code(outfile, final_output)
-    # pprint(labels)
-    # pprint(defs)
 
 
 def main():
     parser = argparse.ArgumentParser(description="Assemble a file")
     parser.add_argument("infile", help="Path to the file to be read")
     parser.add_argument("outfile", help="Path to the file to be output")
-    parser.add_argument("-p", "--print", action='store_true', help="Print file out with line numbers and addresses")
+    parser.add_argument(
+        "-p",
+        "--print",
+        action="store_true",
+        help="Print file out with line numbers and addresses",
+    )
 
     args = parser.parse_args()
     assemble_file(args.infile, args.outfile, print_bin=args.print)
