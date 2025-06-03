@@ -36,15 +36,8 @@ def parse_arg(arg: str):
         raise ValueError(f"Could not parse arg {arg}")
 
 
-def parse_line(line: str, symbols: dict[str, str] = {}):
-    label_split = line.strip().split(":", 1)
-    label = label_split[0].upper() if len(label_split) else None
-    if not label_split[-1]:
-        return [], label
-
-    instr, *args = [
-        symbols[word] if word in symbols else word for word in label_split[-1].split()
-    ]
+def parse_code(code: str, symbols: dict[str, str] = {}):
+    instr, *args = [symbols[word] if word in symbols else word for word in code.split()]
     variants = iv.get(instr)
     if variants is None:
         raise ValueError(f"Unknown instruction: {instr}")
@@ -52,11 +45,36 @@ def parse_line(line: str, symbols: dict[str, str] = {}):
     types, output = zip(*[parse_arg(arg) for arg in args]) if args else ([], [])
     variant = "".join(types)
     if variant in variants:
-        return [it[variants[variant]], *output], label
+        return [it[variants[variant]], *output]
     else:
         raise ValueError(
             f"Instruction '{instr}' does not support args: {" ".join(args)}"
         )
+
+
+def parse_directive(code: str):
+    directive, *arg = code.split(maxsplit=1)
+    match directive:
+        case ".ASCIIZ":
+            if arg:
+                return [*arg[0].encode("ascii"), 0]
+            else:
+                raise ValueError(".ASCIIZ directive requires an input!")
+        case _:
+            raise ValueError(f"Unknown directive: {directive}")
+
+
+def parse_line(line: str, symbols: dict[str, str] = {}):
+    label_split = line.strip().split(":", 1)
+    label = label_split[0].upper() if len(label_split) else None
+    code = label_split[-1].strip()
+    if not code:
+        return [], label
+    
+    if code.startswith("."):
+        return parse_directive(code), label
+    else:
+        return parse_code(code, symbols), label
 
 
 def read_file(filepath):
