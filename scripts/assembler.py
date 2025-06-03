@@ -1,7 +1,5 @@
 import argparse
-from pprint import pprint
 import re
-import struct
 
 from instructions import instruction_table as it, instruction_variants as iv
 
@@ -38,13 +36,15 @@ def parse_arg(arg: str):
         raise ValueError(f"Could not parse arg {arg}")
 
 
-def parse_line(words: list[str]):
-    if not words or words[0].startswith(";"):
-        return None, 0
-    if words[0][-1] == ":" or (len(words) == 1 and not words[0].isupper()):
-        return ("LABEL", words[0].rstrip(":")), 0
+def parse_line(line: str, symbols: dict[str, str] = {}):
+    label_split = line.strip().split(":", 1)
+    label = label_split[0].upper() if len(label_split) else None
+    if not label_split[-1]:
+        return [], label
 
-    instr, *args = words
+    instr, *args = [
+        symbols[word] if word in symbols else word for word in label_split[-1].split()
+    ]
     variants = iv.get(instr)
     if variants is None:
         raise ValueError(f"Unknown instruction: {instr}")
@@ -52,7 +52,7 @@ def parse_line(words: list[str]):
     types, output = zip(*[parse_arg(arg) for arg in args]) if args else ([], [])
     variant = "".join(types)
     if variant in variants:
-        return [it[variants[variant]], *output], len(output) + 1
+        return [it[variants[variant]], *output], label
     else:
         raise ValueError(
             f"Instruction '{instr}' does not support args: {" ".join(args)}"
@@ -74,37 +74,32 @@ def assemble_file(infile, outfile, print_bin=False):
 
     ir = []
     labels = {}
-    defs = {}
+    symbols = {}
     pos = 0
     for line_number, line in enumerate(lines):
         line_beg = pos
         bin_out = False
         try:
-            before_comment = line.upper().split(";")[0]
+            before_comment = line.upper().split(";")[0].strip()
             if "=" in before_comment:
                 name, value = [section.strip() for section in before_comment.split("=")]
-                defs[name] = value
-            elif len(
-                words := [
-                    defs[word] if word in defs else word
-                    for word in before_comment.strip().split()
-                ]
-            ):
-                parsed, size = parse_line(words)
-                if isinstance(parsed, tuple):
-                    labels[parsed[1]] = pos
-                else:
+                symbols[name] = value
+            else:
+                parsed, label = parse_line(before_comment, symbols)
+                if label:
+                    labels[label] = pos
+                if parsed:
                     ir.append(parsed)
+                    pos += len(parsed)
                     bin_out = True
-                # print(f"{line.strip()} - {pos:x}")
-                pos += size
         except Exception as e:
             raise Exception(f"Error parsing line {line_number}: {line}")
-        if print_bin:
-            if bin_out:
-                print(f"{line_number:4} ({line_beg:04x}): {line}".rstrip())
-            else:
-                print(f"{line_number:4}       : {line}".rstrip())
+        finally:
+            if print_bin:
+                if bin_out:
+                    print(f"{line_number:4} ({line_beg:02x}): {line.strip()}".rstrip())
+                else:
+                    print(f"{line_number:4}     : {line.strip()}".rstrip())
 
     final_output = []
     for instr in ir:
