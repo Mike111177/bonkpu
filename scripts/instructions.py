@@ -67,6 +67,7 @@ instruction_microcode = [
     ("LDa", [*select_address_arg, AI | RO]),
     ("LDp", [*select_address_arg, *select_address, AI | RO]),
     ("LDs", [*select_offset_arg, *select_stack, AI | RO, OC]),
+    ("LDai", [*select_count, RO | BI | CE, *select_count, BO | MI | CE, RO | OI | MU, AI | RO, OC]),
     ("STa", [*select_address_arg, RI | AO]),
     ("STp", [*select_address_arg, *select_address, RI | AO]),
     ("STs", [*select_offset_arg, *select_stack, RI | AO, OC]),
@@ -110,6 +111,6 @@ def microcode_post_fn(instruction: list[int]):
 instruction_table = {ins: idx for idx, (ins, _) in enumerate(instruction_microcode)}
 instruction_variants = defaultdict(dict)
 for instr, opcode in instruction_table.items():
-    match = re.match(r'^([A-Z]+)(.*)$', instr)
-    base, variant =  match.group(1), match.group(2)
+    match = re.match(r"^([A-Z]+)(.*)$", instr)
+    base, variant = match.group(1), match.group(2)
     instruction_variants[base][variant] = instr

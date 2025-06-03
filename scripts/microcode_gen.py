@@ -12,7 +12,7 @@ DEFAULT_OUTPUT_FOLDER = os.path.join(os.path.dirname(__file__), "..", "bin")
 
 
 def print_instructions(table):
-    print(f" IDX (hx)| INS | V | OPCODE    | Len")
+    print(f" IDX (hx)| INS | V  | OPCODE    | Len")
     print("-------------------------------------")
     for idx, [ins, micro] in enumerate(table):
         if isinstance(micro, list):
@@ -27,7 +27,7 @@ def print_instructions(table):
             else (ins, "")
         )
         print(
-            f" {idx:02} ({idx:02x}) | {op:>4} | {variant:1} | {idx:08b} | {length}"
+            f" {idx:02} ({idx:02x}) | {op:>4} | {variant:>2} | {idx:08b} | {length}"
         )
 
 
