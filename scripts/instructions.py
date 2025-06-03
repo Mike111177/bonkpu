@@ -7,7 +7,8 @@ IE = 1 << 15
 CE = 1 << 14
 # Ram Control
 MU = 1 << 13
-# 12
+#X math
+XM = 1 << 12
 # ALU Control
 SU = 1 << 11
 FI = 1 << 10
@@ -24,6 +25,7 @@ CI = 5 << 4
 MI = 6 << 4
 OI = 7 << 4
 OC = 8 << 4
+XI = 9 << 4
 # Bus out control (bit 0-3)
 RO = 1
 AO = 2
@@ -31,6 +33,7 @@ BO = 3
 EO = 4
 CO = 5
 SO = 6
+XO = 7
 HLT = 15  # We can't halt and output at the same time anyway :D
 
 
