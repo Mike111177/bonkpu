@@ -71,6 +71,7 @@ instruction_microcode = [
     ("LDp", [*select_address_arg, *select_address, AI | RO]),
     ("LDs", [*select_offset_arg, *select_stack, AI | RO, OC]),
     ("LDai", [*select_count, RO | BI | CE, *select_count, BO | MI | CE, RO | OI | MU, AI | RO, OC]),
+    ("LDas", [*select_count, RO | XI | CE, *select_offset_arg, *select_stack, EO | MI | XM | MU, RO | AI]),
     ("STa", [*select_address_arg, RI | AO]),
     ("STp", [*select_address_arg, *select_address, RI | AO]),
     ("STs", [*select_offset_arg, *select_stack, RI | AO, OC]),
