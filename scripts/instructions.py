@@ -6,8 +6,8 @@ IE = 1 << 15
 # Counter control
 CE = 1 << 14
 # Ram Control
-MU = 1 << 13
-#X math
+# MU = 1 << 13
+# X math
 XM = 1 << 12
 # ALU Control
 SU = 1 << 11
@@ -23,9 +23,7 @@ BI = 3 << 4
 II = 4 << 4
 CI = 5 << 4
 MI = 6 << 4
-OI = 7 << 4
-OC = 8 << 4
-XI = 9 << 4
+XI = 7 << 4
 # Bus out control (bit 0-3)
 RO = 1
 AO = 2
@@ -47,7 +45,7 @@ carrySet = lambda f: f & FLAG_CARRY
 # overflowSet = lambda f: bool(f & FLAG_SIGN) != bool(f & FLAG_CARRY) #nvm i need a hardware flag for this to work
 
 
-select_count = [MI | CO | MU]
+select_count = [MI | CO]
 
 # Gets prepended to all instructions
 ld_op = [*select_count, RO | II | CE]
@@ -56,34 +54,45 @@ jumpa = [*select_count, CI | RO | CE]
 
 skip_a = [CE]
 
-select_address = [MI | RO | MU]
+select_address = [MI | RO]
 
-select_address_arg = [*select_count, MI | RO | MU | CE]
+select_arg = [*select_count, MI | RO | CE]
 
-select_offset_arg = [*select_count, OI | RO | CE]
+select_stack = [MI | SO]
 
-select_stack = [MI | SO | MU]
+select_stack_from_arg = [*select_count, RO | XI | CE, BI | SO, EO | MI | XM]
 
 instruction_microcode = [
     ("NOP", []),
+    ("LD", [AO | MI, RO | AI]),
     ("LDi", [*select_count, RO | AI | CE]),
-    ("LDa", [*select_address_arg, AI | RO]),
-    ("LDp", [*select_address_arg, *select_address, AI | RO]),
-    ("LDs", [*select_offset_arg, *select_stack, AI | RO, OC]),
-    ("LDai", [*select_count, RO | BI | CE, *select_count, BO | MI | CE, RO | OI | MU, AI | RO, OC]),
-    ("LDas", [*select_count, RO | XI | CE, *select_offset_arg, *select_stack, EO | MI | XM | MU, RO | AI]),
-    ("STa", [*select_address_arg, RI | AO]),
-    ("STp", [*select_address_arg, *select_address, RI | AO]),
-    ("STs", [*select_offset_arg, *select_stack, RI | AO, OC]),
+    ("LDa", [*select_arg, AI | RO]),
+    # ("LDp", [*select_arg, *select_address, AI | RO]),
+    ("LDs", [*select_stack_from_arg, RO | AI]),
+    # ("LDai", [*select_count, RO | BI | CE, *select_count, BO | MI | CE, RO | OI | MU, AI | RO, OC]),
+    (
+        "LDsa",
+        [
+            *select_stack_from_arg,
+            RO | XI,
+            *select_count,
+            RO | BI | CE,
+            EO | MI | XM,
+            RO | AI,
+        ],
+    ),  # this allows for some nice shorthand but may be redundant (also breaks 3 bit step threshold)
+    ("STa", [*select_arg, RI | AO]),
+    # ("STp", [*select_arg, *select_address, RI | AO]),
+    ("STs", [*select_stack_from_arg, AO | RI]),
     ("ADDi", [*select_count, RO | BI | CE, EO | AI | FI]),
-    ("ADDa", [*select_address_arg, BI | RO, EO | AI | FI]),
-    ("ADDs", [*select_offset_arg, *select_stack, RO | BI, EO | AI | FI, OC]),
+    ("ADDa", [*select_arg, BI | RO, EO | AI | FI]),
+    ("ADDs", [*select_stack_from_arg, RO | BI, EO | AI | FI]),
     ("SUBi", [*select_count, RO | BI | CE, SU | EO | AI | FI]),
-    ("SUBa", [*select_address_arg, BI | RO, SU | EO | AI | FI]),
-    ("SUBs", [*select_offset_arg, *select_stack, RO | BI, SU | EO | AI | FI, OC]),
+    ("SUBa", [*select_arg, BI | RO, SU | EO | AI | FI]),
+    ("SUBs", [*select_stack_from_arg, RO | BI, EO | AI | SU | FI]),
     ("CMPi", [*select_count, RO | BI | CE, SU | FI]),
-    ("CMPa", [*select_address_arg, BI | RO, SU | FI]),
-    ("CMPs", [*select_offset_arg, *select_stack, RO | BI, SU | FI | OC]),
+    ("CMPa", [*select_arg, BI | RO, SU | FI]),
+    ("CMPs", [*select_stack_from_arg, RO | BI, SU | FI]),
     ("JMPa", jumpa),
     ("JEZa", lambda f: (jumpa if zeroSet(f) else skip_a)),
     ("JNZa", lambda f: (jumpa if not zeroSet(f) else skip_a)),

@@ -4,7 +4,7 @@ import re
 from instructions import instruction_table as it, instruction_variants as iv
 
 
-def parse_number(s):
+def parse_number(s: str):
     s = s.strip().lower()
     if s.startswith("0x"):
         return int(s, 16)
@@ -16,22 +16,20 @@ def parse_number(s):
         return int(s, 10)
 
 
-def parse_num8(num: str):
-    return [parse_number(num)]
-
-
 def parse_arg(arg: str):
     try:
-        if arg.startswith("#"):
-            return "p", *parse_num8(arg[1:])
+        if arg.startswith("*"): # Might remove this thanks to LD deref
+            return "p", parse_number(arg[1:])
         elif arg.startswith("^"):
-            return "s", *parse_num8(arg[1:])
+            return "s", parse_number(arg[1:])
         elif arg.startswith("$"):
-            return "a", *parse_num8(arg[1:])
+            return "a", parse_number(arg[1:])
         elif re.match(r"^[a-zA-Z_]\w*$", arg):
             return "a", arg
+        elif arg.startswith("&"):
+            return "i", arg[1:]
         else:
-            return "i", *parse_num8(arg)
+            return "i", parse_number(arg)
     except:
         raise ValueError(f"Could not parse arg {arg}")
 
@@ -40,7 +38,7 @@ def parse_code(code: str, symbols: dict[str, str] = {}):
     instr, *args = [symbols[word] if word in symbols else word for word in code.split()]
     variants = iv.get(instr)
     if variants is None:
-        raise ValueError(f"Unknown instruction: {instr}")
+        raise ValueError(f'Unknown instruction: "{instr}"')
 
     types, output = zip(*[parse_arg(arg) for arg in args]) if args else ([], [])
     variant = "".join(types)
@@ -48,7 +46,7 @@ def parse_code(code: str, symbols: dict[str, str] = {}):
         return [it[variants[variant]], *output]
     else:
         raise ValueError(
-            f"Instruction '{instr}' does not support args: {" ".join(args)}"
+            f'Instruction \'{instr}\' does not support args: "{" ".join(args)}". Would require "{variant}" variant.'
         )
 
 
@@ -70,7 +68,7 @@ def parse_line(line: str, symbols: dict[str, str] = {}):
     code = label_split[-1].strip()
     if not code:
         return [], label
-    
+
     if code.startswith("."):
         return parse_directive(code), label
     else:
@@ -111,13 +109,13 @@ def assemble_file(infile, outfile, print_bin=False):
                     pos += len(parsed)
                     bin_out = True
         except Exception as e:
-            raise Exception(f"Error parsing line {line_number}: {line}")
+            raise Exception(f'Error parsing line {line_number}: "{line.strip()}"')
         finally:
             if print_bin:
                 if bin_out:
-                    print(f"{line_number:4} ({line_beg:02x}): {line.strip()}".rstrip())
+                    print(f"{line_number:4} ({line_beg:02x}): {line.rstrip()}".rstrip())
                 else:
-                    print(f"{line_number:4}     : {line.strip()}".rstrip())
+                    print(f"{line_number:4}     : {line.rstrip()}".rstrip())
 
     final_output = []
     for instr in ir:
@@ -133,6 +131,12 @@ def assemble_file(infile, outfile, print_bin=False):
     write_machine_code(outfile, final_output)
 
 
+def print_exception_chain(e):
+    while e:
+        print(f"{type(e).__name__}: {e}".strip())
+        e = e.__cause__ or e.__context__
+
+
 def main():
     parser = argparse.ArgumentParser(description="Assemble a file")
     parser.add_argument("infile", help="Path to the file to be read")
@@ -143,9 +147,18 @@ def main():
         action="store_true",
         help="Print file out with line numbers and addresses",
     )
+    parser.add_argument(
+        "-t", "--traceback", action="store_true", help="Log full traceback on error."
+    )
 
     args = parser.parse_args()
-    assemble_file(args.infile, args.outfile, print_bin=args.print)
+    try:
+        assemble_file(args.infile, args.outfile, print_bin=args.print)
+    except Exception as e:
+        if args.traceback:
+            raise e
+        else:
+            print_exception_chain(e)
 
 
 if __name__ == "__main__":

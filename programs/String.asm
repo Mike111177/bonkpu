@@ -1,14 +1,24 @@
         SEI
-        PSH 0
-count = ^1
-loop:   LD mystr count
+        PSH &mystr
+        CALL strl
+        HLT
+strl:   
+        LD ^2
+        PSH
+        str = ^3
+        p = ^1
+        LD p
+loop:   LD
         CMP 0
+        LD p
         JEZ end
-        LD count
         ADD 1
-        ST count
+        ST p
         JMP loop
-end:    HLT
+end:    SUB str
+        SI
+        RET
+
 
 
 mystr: .asciiz Hello World!
