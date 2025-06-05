@@ -6501,7 +6501,7 @@
 				)
 				(uuid "563cc74c-65a6-4f20-bc3a-ac56c780517f")
 			)
-			(table_cell "Microstep"
+			(table_cell "Michaelstep"
 				(exclude_from_sim no)
 				(at 236.22 71.12 0)
 				(size 22.86 2.54)

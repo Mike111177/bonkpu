@@ -6,7 +6,7 @@ import shutil
 import struct
 import tempfile
 
-from instructions import instruction_microcode, ld_op, microcode_post_fn
+from instructions import instruction_michaelcode, ld_op, michaelcode_post_fn
 
 DEFAULT_OUTPUT_FOLDER = os.path.join(os.path.dirname(__file__), "..", "bin")
 
@@ -14,11 +14,11 @@ DEFAULT_OUTPUT_FOLDER = os.path.join(os.path.dirname(__file__), "..", "bin")
 def print_instructions(table):
     print(f" IDX (hx)| INS | V  | OPCODE    | Len")
     print("-------------------------------------")
-    for idx, [ins, micro] in enumerate(table):
-        if isinstance(micro, list):
-            length = len(micro) + len(ld_op)
+    for idx, [ins, michael] in enumerate(table):
+        if isinstance(michael, list):
+            length = len(michael) + len(ld_op)
         else:
-            variance = [len(micro(flags)) + len(ld_op) for flags in range(0b111 + 1) ]
+            variance = [len(michael(flags)) + len(ld_op) for flags in range(0b111 + 1) ]
             length = f"{min(variance)}-{max(variance)}"
 
         op, variant = (
@@ -76,9 +76,9 @@ def write_instructions(
 
 
 if __name__ == "__main__":
-    print_instructions(instruction_microcode)
+    print_instructions(instruction_michaelcode)
     write_instructions(
-        instruction_microcode,
+        instruction_michaelcode,
         prefix=ld_op,
-        post_fn=microcode_post_fn,
+        post_fn=michaelcode_post_fn,
     )

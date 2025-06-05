@@ -556,7 +556,7 @@
     <comp lib="3" loc="(3050,1380)" name="Adder"/>
     <comp lib="4" loc="(2150,1840)" name="Counter">
       <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="MICROSTEP"/>
+      <a name="label" val="MICHAELSTEP"/>
       <a name="max" val="0xf"/>
       <a name="width" val="4"/>
     </comp>
@@ -1170,7 +1170,7 @@ c0 14*0 40 81 14*0 40 83 14*0
 15*0 c0 15*0 c0 15*0 c0 15*0 c0
 15*0 c0 15*0 c0 15*0 c0 15*0 c0
 </a>
-      <a name="label" val="microcode_a"/>
+      <a name="label" val="michaelcode_a"/>
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="4" loc="(2740,1810)" name="ROM">
@@ -2017,7 +2017,7 @@ f 13*0 65 41 14*0 65 41 14*0
 14*0 65 41 14*0 65 41 14*0 65
 41 14*0 65 41 14*0 65 41
 </a>
-      <a name="label" val="microcode_b"/>
+      <a name="label" val="michaelcode_b"/>
       <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="4" loc="(2790,1150)" name="Register">

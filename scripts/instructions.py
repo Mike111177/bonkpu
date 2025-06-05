@@ -62,7 +62,7 @@ select_stack = [MI | SO]
 
 select_stack_from_arg = [*select_count, RO | XI | CE, BI | SO, EO | MI | XM]
 
-instruction_microcode = [
+instruction_michaelcode = [
     ("NOP", []),
     ("LD", [AO | MI, RO | AI]),
     ("LDi", [*select_count, RO | AI | CE]),
@@ -114,14 +114,14 @@ instruction_microcode = [
 ]
 
 
-def microcode_post_fn(instruction: list[int]):
+def michaelcode_post_fn(instruction: list[int]):
     for i in range(len(instruction) - 1, -1, -1):
         if instruction[i]:
             instruction[i] |= IE
             break
 
 
-instruction_table = {ins: idx for idx, (ins, _) in enumerate(instruction_microcode)}
+instruction_table = {ins: idx for idx, (ins, _) in enumerate(instruction_michaelcode)}
 instruction_variants = defaultdict(dict)
 for instr, opcode in instruction_table.items():
     match = re.match(r"^([A-Z]+)(.*)$", instr)
