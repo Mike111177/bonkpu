@@ -17,10 +17,9 @@ COUNTER = ^1
 ACC = ^2
     PSH
     LD A
-    SUB B
+    CMP B
     JNC skip_swap ; If A>B swap
 TMP = ^1 ; 
-    LD A
     ST TMP
     LD B
     ST A    
