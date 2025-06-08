@@ -1,0 +1,6 @@
+[build]
+rustflags = [
+  "-C", "force-frame-pointers",
+  "-C", "link-arg=-Tlinkall.x",
+]
+target = "riscv32imac-unknown-none-elf"
