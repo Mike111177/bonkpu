@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BonkASM Editor</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: #1e1e1e;
+      color: #d4d4d4;
+      padding: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 300px;
+      background-color: #252526;
+      color: #d4d4d4;
+      border: 1px solid #444;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #0e639c;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>BonkASM Editor</h1>
+  <form onsubmit="handleSubmit(event)">
+    <textarea id="code" placeholder="Write your code here..."></textarea>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const code = document.getElementById('code').value;
+    }
+  </script>
+</body>
+</html>
